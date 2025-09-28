@@ -6,7 +6,7 @@ It is designed for **investors, CEX partners, and the community** to verify tran
 ---
 
 ## 📄 Treasury Documentation
-- [Audit Ready: Treasury Safe Multichain](./docs/treasury/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
+- [Audit Ready: Treasury Safe Multichain](./treasury/docs/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
 - [Safe Structure](./docs/treasury/IOB_Safe_Structure.pdf)  
 - [Multisig Architecture](./docs/treasury/IOB_Safe_Multisig_Architecture.pdf)  
 - [Governance & Branding](./docs/treasury/IOB_Treasury_Governance.pdf)  
