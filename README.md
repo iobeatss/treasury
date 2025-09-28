@@ -12,14 +12,14 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 ---
 
 ## 📄 Treasury Documentation
-- [Audit Ready: Treasury Safe Multichain](./docs/treasury/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
-- [Safe Structure](./docs/treasury/IOB_Safe_Structure.pdf)  
-- [Multisig Architecture](./docs/treasury/IOB_Safe_Multisig_Architecture.pdf)  
-- [Governance & Branding](./docs/treasury/IOB_Treasury_Governance.pdf)  
-- [Treasury Multichain Report (EN)](./docs/treasury/IOB_Treasury_Multichain_EN_v1_fixed.pdf)  
-- [Executive Summary](./docs/treasury/IOB_Treasury_Multichain_Executive_Summary.pdf)  
-- [Appendix B: Locks & Vesting](./docs/treasury/IOB_Treasury_AppendixB_Locks_Vesting_v4.pdf)  
-- [Vault Addresses](./docs/treasury/addresses.md)  
+- [Audit Ready: Treasury Safe Multichain](./docs/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
+- [Safe Structure](./docs/IOB_Safe_Structure.pdf)  
+- [Multisig Architecture](./docs/IOB_Safe_Multisig_Architecture.pdf)  
+- [Governance & Branding](./docs/IOB_Treasury_Governance.pdf)  
+- [Treasury Multichain Report (EN)](./docs/IOB_Treasury_Multichain_EN_v1_fixed.pdf)  
+- [Executive Summary](./docs/IOB_Treasury_Multichain_Executive_Summary.pdf)  
+- [Appendix B: Locks & Vesting](./docs/IOB_Treasury_AppendixB_Locks_Vesting_v4.pdf)  
+- [Vault Addresses](./docs/addresses.md)  
 - [Milestones Roadmap](./docs/MILESTONES.md) ✅  
 
 ---
@@ -34,8 +34,8 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 ## 🌐 Related Links
 - [Main Website](https://iobeats.com)  
 - [Music Player](https://open.iobeats.com)  
-- [Whitepaper](https://open.iobeats.com/doc/iobeats-white-paper.pdf)  
-- [Pitch Deck](https://open.iobeats.com/doc/iobeats-pitch-deck.pdf)  
+- [Whitepaper](https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-white-paper.pdf)  
+- [Pitch Deck](https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-pitch-deck.pdf)  
 
 ---
 
