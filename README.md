@@ -45,7 +45,7 @@ To organize issues and tasks, the following labels are used:
 ## 📌 Roadmap & Milestones
 
 ### 🚀 Milestone v1.0 — Release Treasury Transparency Pack  
-**Due date:** 2025-09-30  
+**Due date:** 2025-10-04  
 **Objective:** Establish the foundation of treasury transparency.  
 - Lock vaults on all chains  
 - Publish addresses & Appendix B  
