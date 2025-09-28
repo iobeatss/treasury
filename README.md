@@ -1,4 +1,4 @@
-# 💎 IO Beats — Treasury Transparency  
+# 💎 iO Beats — Treasury Transparency  
 
 [![Milestones](https://img.shields.io/badge/Milestones-Roadmap-blue)](#-roadmap)  
 [![Audit](https://img.shields.io/badge/Audit-Cyberscope-brightgreen.svg)](https://raw.githubusercontent.com/cyberscope-io/audits/main/iob/audit.pdf)  
@@ -6,7 +6,7 @@
 [![Deployment](https://img.shields.io/badge/Deployed-MultiChain-purple.svg)](https://github.com/iobeatss/IOB-Smart-contract#deployment)  
 [![Docs](https://img.shields.io/badge/Docs-Available-brightgreen.svg)](https://github.com/iobeatss/iobeats-docs)  
 
-This repository contains all official documents related to **IO Beats Treasury governance, safes, locks, and vesting schedules**.  
+This repository contains all official documents related to **iO Beats Treasury governance, safes, locks, and vesting schedules**.  
 It is designed for **investors, exchanges (CEX), and the community** to ensure **maximum transparency**.
 
 ---
