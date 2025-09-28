@@ -6,7 +6,7 @@ Each milestone groups issues and deliverables, allowing the community, investors
 ---
 
 ## 🚀 Milestone v1.0 — Treasury Transparency Pack  
-**Due date:** 2025-10-31  
+**Due date:** 2025-10-04  
 
 🎯 **Goal**: Publish the first complete IO Beats Treasury Transparency Pack.  
 
