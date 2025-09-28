@@ -1,6 +1,6 @@
 # 💎 IO Beats — Treasury Transparency  
 
-[![Milestones](https://img.shields.io/badge/Milestones-Roadmap-blue)](./docs/MILESTONES.md)  
+[![Milestones](https://img.shields.io/badge/Milestones-Roadmap-blue)](#-roadmap)  
 [![Audit](https://img.shields.io/badge/Audit-Cyberscope-brightgreen.svg)](https://raw.githubusercontent.com/cyberscope-io/audits/main/iob/audit.pdf)  
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-blue.svg?logo=solidity)](https://docs.soliditylang.org/en/v0.8.24/)  
 [![Deployment](https://img.shields.io/badge/Deployed-MultiChain-purple.svg)](https://github.com/iobeatss/IOB-Smart-contract#deployment)  
@@ -20,7 +20,6 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - [Executive Summary](./docs/IOB_Treasury_Multichain_Executive_Summary.pdf)  
 - [Appendix B: Locks & Vesting](./docs/IOB_Treasury_AppendixB_Locks_Vesting_v4.pdf)  
 - [Vault Addresses](./docs/addresses.md)  
-- [Milestones Roadmap](./docs/MILESTONES.md) ✅  
 
 ---
 
@@ -28,6 +27,46 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Multisig Policy:** 4/7 required signatures  
 - **Signers:** Founder, CoFounder, TechLead, CFO, Governance, Security, Backup  
 - **Chains:** Ethereum · Base · Polygon · Arbitrum · BNB Chain  
+
+---
+
+## 🏷 Labels
+To organize issues and tasks, the following labels are used:  
+- `transparency` → dashboards, reports, public data  
+- `governance` → DAO, Snapshot votes  
+- `automation` → GitHub Actions, scripts  
+- `reporting` → reports, exports  
+- `vesting` → on-chain locks, schedules  
+- `frontend` → UI, dashboards  
+- `docs` → documentation  
+
+---
+
+## 📌 Roadmap & Milestones
+
+### 🚀 Milestone v1.0 — Release Treasury Transparency Pack  
+**Due date:** 2025-09-30  
+**Objective:** Establish the foundation of treasury transparency.  
+- Lock vaults on all chains  
+- Publish addresses & Appendix B  
+- Initial transparency documentation  
+
+---
+
+### 🔎 Milestone v1.1 — Transparency & Governance Expansion  
+**Due date:** 2025-12-31  
+**Objective:** Extend transparency and activate DAO governance.  
+- Dune Dashboard for real-time transparency  
+- DAO Snapshot governance voting  
+
+---
+
+### ⚡ Milestone v2.0 — Full Treasury Automation  
+**Due date:** 2026-06-30  
+**Objective:** Automate treasury management and reporting.  
+- Monthly reporting automation (GitHub Actions + PDF)  
+- On-chain vesting → public reports  
+- Public IO Beats treasury dashboard (UI)  
 
 ---
 
@@ -39,4 +78,4 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ---
 
-⚠️ **Note:** Vault addresses are placeholders until locks are executed on-chain.
+⚠️ **Note:** Vault addresses are placeholders until locks are executed on-chain.  
