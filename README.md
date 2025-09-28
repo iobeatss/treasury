@@ -12,14 +12,18 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 ---
 
 ## 📄 Treasury Documentation
+
 - [Audit Ready: Treasury Safe Multichain](./docs/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
 - [Safe Structure](./docs/IOB_Safe_Structure.pdf)  
 - [Multisig Architecture](./docs/IOB_Safe_Multisig_Architecture.pdf)  
 - [Governance & Branding](./docs/IOB_Treasury_Governance.pdf)  
-- [Treasury Multichain Report (EN)](./docs/IOB_Treasury_Multichain_EN_v1_fixed.pdf)  
+- [Treasury Multichain Report (EN)](./docs/IOB_Treasury_Multichain_EN.pdf)  
 - [Executive Summary](./docs/IOB_Treasury_Multichain_Executive_Summary.pdf)  
-- [Appendix B: Locks & Vesting](./docs/IOB_Treasury_AppendixB_Locks_Vesting_v4.pdf)  
+- [Appendix B: Locks & Vesting](./docs/IOB_Treasury_AppendixB_Locks_Vesting.pdf)  
 - [Vault Addresses](./docs/addresses.md)  
+- [Roadmap](./docs/ROADMAP.md)  
+- [Milestones](./docs/MILESTONES.md)  
+
 
 ---
 
