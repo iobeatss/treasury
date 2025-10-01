@@ -1,15 +1,16 @@
 name: Release Treasury (tag)
 
 on:
+  workflow_dispatch:      # permet de lancer à la main depuis l’onglet Actions
   push:
     tags:
-      - 'v*'   # ex: v1.1-treasury
+      - 'v*'              # ex: v1.1-treasury
 
 jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write     # nécessaire pour créer la Release et uploader les assets
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,7 +21,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           name: Appendix B v1.1 — Safe Multisig Treasury
-          body_path: .github/release-notes/v1.1.md
+          body_path: .github/release-notes/v1.1.md   # ton fichier de notes
           draft: false
           prerelease: false
           files: |
