@@ -5,23 +5,49 @@ on:
     branches: [ main ]
     paths:
       - "**/*.md"
+      - ".markdownlint*"
+      - ".github/workflows/markdown-lint.yml"
   pull_request:
     paths:
       - "**/*.md"
+      - ".markdownlint*"
+      - ".github/workflows/markdown-lint.yml"
   workflow_dispatch:
 
 jobs:
-  markdownlint:
+  markdown-lint:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run markdownlint-cli2
-        uses: DavidAnson/markdownlint-cli2-action@v16
+      # Optionnel : garder un cache pour le binaire (rapide et simple à ignorer si besoin)
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          globs: |
-            **/*.md
-        env:
-          # pour les longs titres/URLs, on garde du flex
-          markdownlint_config: .markdownlint.json
+          node-version: 20
+
+      - name: Install markdownlint-cli2
+        run: |
+          npm i -g markdownlint-cli2@0.15.0
+
+      - name: Run markdownlint-cli2
+        run: |
+          # Le fichier d’ignore + la config JSONC seront détectés automatiquement
+          markdownlint-cli2 "**/*.md" "#node_modules" "#.git"
+
+      # Upload d’un rapport texte (utile en debug)
+      - name: Save lint report
+        if: always()
+        run: |
+          markdownlint-cli2 "**/*.md" "#node_modules" "#.git" > mdlint-report.txt || true
+        shell: bash
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: markdownlint-report
+          path: mdlint-report.txt
+          if-no-files-found: warn
