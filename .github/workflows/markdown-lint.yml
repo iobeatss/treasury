@@ -1,0 +1,27 @@
+name: Docs — Markdown Lint
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "**/*.md"
+  pull_request:
+    paths:
+      - "**/*.md"
+  workflow_dispatch:
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run markdownlint-cli2
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            **/*.md
+        env:
+          # pour les longs titres/URLs, on garde du flex
+          markdownlint_config: .markdownlint.json
