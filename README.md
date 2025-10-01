@@ -19,10 +19,20 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ## 📄 Treasury Documentation
 
-- **Appendix B v1.1 — Safe Multisig Treasury** → [`PDF`](./docs/IOB_Treasury_AppendixB_v1.1.pdf)
-- **Vesting & Lock Strategy v1.1** → [`PDF`](./docs/IOB_Vesting_Lock_Strategy_v1.1.pdf)
-- **Lock Distribution v1.1 (Multi-chain Table)** → [`PDF`](./docs/IOB_Treasury_Lock_Distribution_v1.1.pdf)
+- **Appendix B v1.1 — Safe Multisig Treasury** → [`PDF`](./docs/IOB_Treasury_AppendixB_v1.1.pdf)  
+- **Vesting & Lock Strategy v1.1** → [`PDF`](./docs/IOB_Vesting_Lock_Strategy_v1.1.pdf)  
+- **Lock Distribution v1.1 (Multi-chain Table)** → [`PDF`](./docs/IOB_Treasury_Lock_Distribution_v1.1.pdf)  
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
+
+**On-chain Proofs**
+- **Ethereum (Mainnet) — Treasury Safe (4/7)**  
+  - **Safe Address:** `0xA2952C5F625e59E21012FB92A8D8269Fdb324554`  
+    ↳ [`Etherscan`](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554)  
+  - **First transaction (confirmation):**  
+    `0x3dc91e19fc3489a26a35fd986754cdb651ffbbc42cdb2c9956eef6d0758e8f4`  
+    ↳ [`Etherscan`](https://etherscan.io/tx/0x3dc91e19fc3489a26a35fd986754cdb651ffbbc42cdb2c9956eef6d0758e8f4)  
+  - **Multisig Confirmation Report (PDF):**  
+    [`docs/proofs/2025-10-01_Multisig_Transaction_Report.pdf`](./docs/proofs/2025-10-01_Multisig_Transaction_Report.pdf)
 
 **Legacy (archived):**
 - Appendix B v1.0 — Locks & Vesting → [`PDF`](./docs/IOB_Treasury_AppendixB_Locks_Vesting.pdf)
