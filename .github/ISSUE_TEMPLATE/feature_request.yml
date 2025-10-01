@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest an improvement for transparency/automation
+labels: [enhancement]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      placeholder: What do you want to add/change and why?
+    validations:
+      required: true
