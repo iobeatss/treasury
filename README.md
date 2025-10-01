@@ -18,7 +18,7 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 - **Appendix B v1.1 — Safe Multisig Treasury** → [`PDF`](./docs/IOB_Treasury_AppendixB_v1.1.pdf)
 - **Vesting & Lock Strategy v1.1** → [`PDF`](./docs/IOB_Vesting_Lock_Strategy_v1.1.pdf)
-- **Lock Distribution v1.1 (Multi-chain Table)** → [`PDF`](./docs/IOB_Treasury_Lock_Distribution_v1.1_Logo.pdf)
+- **Lock Distribution v1.1 (Multi-chain Table)** → [`PDF`](./docs/IOB_Treasury_Lock_Distribution_v1.1.pdf)
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
 
 **Legacy (archived):**
