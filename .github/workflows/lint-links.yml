@@ -1,40 +1,31 @@
-name: Docs — Link Checker
+name: lint-links
 
 on:
   push:
     branches: [ main ]
-    paths:
-      - "**/*.md"
-      - "docs/**"
   pull_request:
-    paths:
-      - "**/*.md"
-      - "docs/**"
-  workflow_dispatch:
 
 jobs:
-  lychee:
+  link-checker:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      # Étape 1 : Récupérer le repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run lychee (link checker)
+      # Étape 2 : Lancer Lychee avec le fichier lychee.toml
+      - name: Run Lychee link checker
         uses: lycheeverse/lychee-action@v2
         with:
-          # utilise la config ci-dessous
-          args: >
-            --config .lychee.toml
-            --verbose
-            --no-progress
-            --accept 200,206,429
-            .
+          args: --verbose --config lychee.toml .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload lychee report
-        if: always()
+      # Étape 3 : Sauvegarder le rapport en artifact
+      - name: Upload Lychee report
         uses: actions/upload-artifact@v4
         with:
           name: lychee-report
-          path: lychee/out.md
+          path: ./lychee/out.md
+          if-no-files-found: warn
