@@ -1,7 +1,13 @@
-## Summary
-What / Why
+## 🎯 Objective
+Explain the goal of this change (why).
 
-## Checklist
-- [ ] Scope limité et documenté
-- [ ] README / docs mis à jour si besoin
-- [ ] Liens vers Issues / preuves on-chain inclus si pertinent
+## 🔁 Changes
+- Short bullet list of what changed
+
+## ✅ Checks
+- [ ] CI green (lint-links, Docs — Markdown Lint)
+- [ ] Docs/README updated if needed
+- [ ] Linked issue: Closes #123
+
+## 🧪 How to test
+Steps or notes for reviewers.
