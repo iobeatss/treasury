@@ -3,7 +3,7 @@
 
 # 💎 iO Beats — Treasury Transparency
 
-[![Milestones](https://img.shields.io/badge/Milestones-Roadmap-blue)](#-roadmap--milestones)
+[![Milestones](https://img.shields.io/badge/Milestones-Roadmap-blue)](#roadmap--milestones)
 [![Audit](https://img.shields.io/badge/Audit-Cyberscope-brightgreen.svg)](https://raw.githubusercontent.com/cyberscope-io/audits/main/iob/audit.pdf)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-blue.svg?logo=solidity)](https://docs.soliditylang.org/en/v0.8.24/)
 [![Deployment](https://img.shields.io/badge/Deployed-MultiChain-purple.svg)](https://github.com/iobeatss/IOB-Smart-contract#deployment)
