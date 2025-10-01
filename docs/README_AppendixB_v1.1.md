@@ -11,11 +11,14 @@ This release formalizes the Safe Multisig Treasury Strategy, replacing the legac
 - Vesting parameters & operational steps for presale/team/advisors published. :contentReference[oaicite:8]{index=8}
 - Multi-chain lock distribution table provided for public transparency. :contentReference[oaicite:9]{index=9}
 
-## Files
-- docs/IOB_Treasury_AppendixB_v1.1.pdf  – governance doc (Safe multisig, 66%, burn, legal). :contentReference[oaicite:10]{index=10}
-- docs/IOB_Vesting_Lock_Strategy_v1.1.pdf – vesting model + steps. :contentReference[oaicite:11]{index=11}
-- docs/IOB_Treasury_Lock_Distribution_v1.1.pdf – chain-by-chain locked supply. :contentReference[oaicite:12]{index=12}
-- CHANGELOG.md – version history.
+### Files
+- [IOB_Treasury_AppendixB_v1.1.pdf](./IOB_Treasury_AppendixB_v1.1.pdf) — governance doc (Safe multisig, 66%, burn, legal)
+- [IOB_Vesting_Lock_Strategy_v1.1.pdf](./IOB_Vesting_Lock_Strategy_v1.1.pdf) — vesting model + steps
+- [IOB_Treasury_Lock_Distribution_v1.1.pdf](./IOB_Treasury_Lock_Distribution_v1.1.pdf) — chain-by-chain locked supply
+- [CHANGELOG.md](../CHANGELOG.md) — version history
 
-## Notes
-The old “Locks & Vesting” doc remains archived for reference. :contentReference[oaicite:13]{index=13}
+
+### Notes
+The old **Locks & Vesting** document remains archived for reference:
+[IOB_Treasury_AppendixB_Locks_Vesting.pdf](./IOB_Treasury_AppendixB_Locks_Vesting.pdf).
+
