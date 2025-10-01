@@ -8,16 +8,19 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # nécessaire pour créer la Release et uploader les assets
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # Extrait uniquement la section "## [1.1]" du CHANGELOG pour la description de la Release
       - name: Extract notes from CHANGELOG (v1.1 section)
         id: changelog
         run: |
-          awk '/^\#\# \[1\.1\]/{flag=1;print;next}/^\#\# \[/{flag=0}flag' CHANGELOG.md > RELEASE_NOTES.md
+          awk '/^\#\# \[1\.1\]/{flag=1;print;next}/^\#\# \[/{if(flag){exit}}flag' CHANGELOG.md > RELEASE_NOTES.md
           echo "notes<<EOF" >> $GITHUB_OUTPUT
           cat RELEASE_NOTES.md >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
