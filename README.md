@@ -24,7 +24,7 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Lock Distribution v1.1 (Multi-chain Table)** → [`PDF`](./docs/IOB_Treasury_Lock_Distribution_v1.1.pdf)  
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
 
-**On-chain Proofs**
+### 🔒 On-chain Proofs
 - **Ethereum (Mainnet) — Treasury Safe (4/7)**  
   - **Safe Address:** `0xA2952C5F625e59E21012FB92A8D8269Fdb324554`  
     ↳ [`Etherscan`](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554)  
@@ -107,4 +107,5 @@ To organize issues and tasks, the following labels are used:
 
 ---
 
-⚠️ **Note:** Vault addresses are placeholders until locks are executed on-chain.
+⚠️ **Note:** Vault addresses are placeholders until locks are executed on-chain.  
+_If present, see the full_ **[Legal Disclaimer](./DISCLAIMER.md)**.
