@@ -14,7 +14,7 @@ This release formalizes the Safe Multisig Treasury Strategy, replacing the legac
 ## Files
 - docs/IOB_Treasury_AppendixB_v1.1.pdf  – governance doc (Safe multisig, 66%, burn, legal). :contentReference[oaicite:10]{index=10}
 - docs/IOB_Vesting_Lock_Strategy_v1.1.pdf – vesting model + steps. :contentReference[oaicite:11]{index=11}
-- docs/IOB_Treasury_Lock_Distribution_v1.1_Logo.pdf – chain-by-chain locked supply. :contentReference[oaicite:12]{index=12}
+- docs/IOB_Treasury_Lock_Distribution_v1.1.pdf – chain-by-chain locked supply. :contentReference[oaicite:12]{index=12}
 - CHANGELOG.md – version history.
 
 ## Notes
