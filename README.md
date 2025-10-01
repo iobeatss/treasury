@@ -1,3 +1,5 @@
+[![Release](https://img.shields.io/github/v/release/iobeatss/treasury?display_name=tag&sort=semver)](https://github.com/iobeatss/treasury/releases)
+
 # 💎 iO Beats — Treasury Transparency
 
 [![Milestones](https://img.shields.io/badge/Milestones-Roadmap-blue)](#-roadmap--milestones)
