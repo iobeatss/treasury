@@ -1,16 +1,24 @@
 name: Release Treasury (tag)
 
 on:
-  workflow_dispatch:      # permet de lancer à la main depuis l’onglet Actions
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (ex: v1.1-treasury)'
+        required: true
+      name:
+        description: 'Release title'
+        required: false
+        default: 'Appendix B v1.1 — Safe Multisig Treasury'
   push:
     tags:
-      - 'v*'              # ex: v1.1-treasury
+      - 'v*'  # déclenche aussi quand on pousse un tag
 
 jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      contents: write     # nécessaire pour créer la Release et uploader les assets
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,14 +28,16 @@ jobs:
       - name: Create GitHub Release and upload assets
         uses: softprops/action-gh-release@v2
         with:
-          name: Appendix B v1.1 — Safe Multisig Treasury
-          body_path: .github/release-notes/v1.1.md   # ton fichier de notes
+          tag_name: ${{ inputs.tag }}                # <-- IMPORTANT pour le run manuel
+          name: ${{ inputs.name }}
+          target_commitish: ${{ github.sha }}        # release sur ce commit
+          body_path: .github/release-notes/v1.1.md
           draft: false
           prerelease: false
           files: |
             docs/IOB_Treasury_AppendixB_v1.1.pdf
             docs/IOB_Vesting_Lock_Strategy_v1.1.pdf
-            docs/IOB_Treasury_Lock_Distribution_v1.1_Logo.pdf
+            docs/IOB_Treasury_Lock_Distribution_v1.1.pdf
             CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
