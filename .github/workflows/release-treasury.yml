@@ -1,0 +1,38 @@
+name: Release Treasury (tag)
+
+on:
+  push:
+    tags:
+      - 'v*'   # ex: v1.1-treasury
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract notes from CHANGELOG (v1.1 section)
+        id: changelog
+        run: |
+          awk '/^\#\# \[1\.1\]/{flag=1;print;next}/^\#\# \[/{flag=0}flag' CHANGELOG.md > RELEASE_NOTES.md
+          echo "notes<<EOF" >> $GITHUB_OUTPUT
+          cat RELEASE_NOTES.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release and upload assets
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Appendix B v1.1 — Safe Multisig Treasury
+          body: ${{ steps.changelog.outputs.notes }}
+          draft: false
+          prerelease: false
+          files: |
+            docs/IOB_Treasury_AppendixB_v1.1.pdf
+            docs/IOB_Vesting_Lock_Strategy_v1.1.pdf
+            docs/IOB_Treasury_Lock_Distribution_v1.1_Logo.pdf
+            CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
