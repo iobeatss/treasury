@@ -1,8 +1,12 @@
 # lychee.toml
+
+# Accepter 200 (OK) et 403 (login requis)
 accept = [200, 403]
 
+# Ignorer le lien GitHub Advisory (bloqué aux bots)
 exclude = [
   "https://github.com/iobeatss/treasury/security/advisories/new"
 ]
 
+# Ne pas tester localhost, intranet, etc.
 exclude_all_private = true
