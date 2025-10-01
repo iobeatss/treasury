@@ -1,6 +1,8 @@
-# Default owners for the whole repo
-* @iobeatss
+# Treasury & core
+/treasury/*    @iobeatss @Byounv
 
-# Docs & workflows
-/docs/          @iobeatss
-/.github/       @iobeatss
+# Docs
+/docs/*        @iobeatss
+
+# Default
+*              @iobeatss
