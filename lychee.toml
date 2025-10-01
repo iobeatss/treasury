@@ -1,0 +1,8 @@
+# lychee.toml
+accept = [200, 403]
+
+exclude = [
+  "https://github.com/iobeatss/treasury/security/advisories/new"
+]
+
+exclude_all_private = true
