@@ -1,0 +1,11 @@
+name: Bug report
+description: Report a problem in docs or workflows
+labels: [bug]
+body:
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      placeholder: Steps, expected vs actual, screenshots
+    validations:
+      required: true
