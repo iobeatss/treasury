@@ -1,0 +1,21 @@
+# .github/config.yml
+# Welcome Bot configuration for IO Beats 🎶
+
+# Message when someone opens their first issue
+newIssueWelcomeComment: >
+  👋 Thanks for opening your first *issue* on **IO Beats**!  
+  The team will review it shortly.  
+  👉 Check out our [Wiki](https://github.com/iobeatss/treasury/wiki)  
+  👉 Join our community on [Telegram](https://t.me/iobeats) / [Discord](https://discord.gg/iobeats)
+
+# Message when someone opens their first PR
+newPRWelcomeComment: >
+  🚀 Thanks for submitting your first *pull request* to **IO Beats**!  
+  We really appreciate your contribution 🙌  
+  👉 Please make sure to check our [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+# Message when someone gets their first PR merged
+firstPRMergeComment: >
+  🎉 Congratulations! Your first *pull request* has been merged!  
+  Thank you for contributing to **IO Beats** ❤️  
+  👉 *One team, one dream.*
