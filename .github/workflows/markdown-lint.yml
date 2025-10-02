@@ -1,29 +1,32 @@
-name: Docs — Markdown Lint
+name: Lint Links
 
 on:
   push:
     branches: [ "main" ]
     paths:
       - "**/*.md"
-      - ".markdownlint.jsonc"
+      - ".lychee.toml"
   pull_request:
     branches: [ "main" ]
     paths:
       - "**/*.md"
-      - ".markdownlint.jsonc"
-  workflow_dispatch: {}
+      - ".lychee.toml"
 
 jobs:
-  mdlint:
+  lychee:
     runs-on: ubuntu-latest
-    continue-on-error: true   # ✅ soft fail → le job peut échouer, mais le CI reste vert
-
+    continue-on-error: true   # ✅ soft fail → n'arrête pas la CI si liens cassés
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Run Markdown Lint
-        uses: DavidAnson/markdownlint-cli2-action@v16
+      - name: Run lychee
+        uses: lycheeverse/lychee-action@v1.10.0
         with:
-          globs: |
+          args: >
+            --verbose
+            --no-progress
+            --config .lychee.toml
             **/*.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
