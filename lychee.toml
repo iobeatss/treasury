@@ -1,12 +1,30 @@
-# lychee.toml
+# Retries & timeouts
+max_retries = 3
+retry_wait = 2
+timeout = 20
+user_agent = "Mozilla/5.0 (compatible; iobeats-link-bot/1.0)"
 
-# Accepter 200 (OK) et 403 (login requis)
-accept = [200, 403]
+# Treat 403/429 as acceptable (scanners often block bots temporarily)
+accept = [ "200..=299", "403", "429" ]
 
-# Ignorer le lien GitHub Advisory (bloqué aux bots)
+# Common flaky/blocked targets to ignore or transform
 exclude = [
-  "https://github.com/iobeatss/treasury/security/advisories/new"
+  "^mailto:",
+  "^tel:",
+  # Explorers often rate-limit/bot-block
+  "^https://(www\\.)?etherscan\\.io/address/0x[0-9a-fA-F]{40}",
+  "^https://(www\\.)?bscscan\\.com/address/0x[0-9a-fA-F]{40}",
+  "^https://(www\\.)?polygonscan\\.com/address/0x[0-9a-fA-F]{40}",
+  "^https://(www\\.)?basescan\\.org/address/0x[0-9a-fA-F]{40}",
+  "^https://(www\\.)?arbiscan\\.io/address/0x[0-9a-fA-F]{40}",
+  # Raw GitHub occasionally redirects/rate-limits
+  "^https://raw\\.githubusercontent\\.com/.*",
+  # Images/badges that change or redirect
+  "^https://img\\.shields\\.io/.*",
+  # Temporary dashboards
+  "^https://dune\\.com/.+",
 ]
 
-# Ne pas tester localhost, intranet, etc.
-exclude_all_private = true
+# Optional: only check links in repo (skip remote), uncomment if you still hit limits
+# no_remote = true
+
