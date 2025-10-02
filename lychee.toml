@@ -1,30 +1,45 @@
-# Retries & timeouts
-max_retries = 3
-retry_wait = 2
-timeout = 20
-user_agent = "Mozilla/5.0 (compatible; iobeats-link-bot/1.0)"
+# ===============================
+#   Lychee Link Checker Config
+# ===============================
 
-# Treat 403/429 as acceptable (scanners often block bots temporarily)
+# Nombre maximum de tentatives si un lien échoue
+max_retries = 3
+
+# Temps d’attente entre les tentatives (secondes)
+retry_wait = 2
+
+# Timeout maximum pour une requête (secondes)
+timeout = 20
+
+# User-Agent (certains sites bloquent les bots)
+user_agent = "Mozilla/5.0 (compatible; IOBeats-LinkChecker/1.0; +https://iobeats.com)"
+
+# Accepte certains codes HTTP qui sont souvent renvoyés par erreur
 accept = [ "200..=299", "403", "429" ]
 
-# Common flaky/blocked targets to ignore or transform
+# Exclusions : liens connus comme instables ou qui bloquent les bots
 exclude = [
-  "^mailto:",
-  "^tel:",
-  # Explorers often rate-limit/bot-block
+  "^mailto:",                # emails
+  "^tel:",                   # numéros de téléphone
+  # Block explorers (souvent 403/429 à cause du rate-limit)
   "^https://(www\\.)?etherscan\\.io/address/0x[0-9a-fA-F]{40}",
   "^https://(www\\.)?bscscan\\.com/address/0x[0-9a-fA-F]{40}",
   "^https://(www\\.)?polygonscan\\.com/address/0x[0-9a-fA-F]{40}",
   "^https://(www\\.)?basescan\\.org/address/0x[0-9a-fA-F]{40}",
   "^https://(www\\.)?arbiscan\\.io/address/0x[0-9a-fA-F]{40}",
-  # Raw GitHub occasionally redirects/rate-limits
+  # Raw GitHub (parfois bloque ou rate-limit)
   "^https://raw\\.githubusercontent\\.com/.*",
-  # Images/badges that change or redirect
+  # Badges (souvent redirigés ou variables)
   "^https://img\\.shields\\.io/.*",
-  # Temporary dashboards
-  "^https://dune\\.com/.+",
+  # Dashboards externes (souvent dynamiques)
+  "^https://dune\\.com/.+"
 ]
 
-# Optional: only check links in repo (skip remote), uncomment if you still hit limits
-# no_remote = true
+# Active la vérification détaillée
+verbose = true
 
+# Pas de barre de progression dans GitHub Actions
+no_progress = true
+
+# Nombre maximum de redirections
+max_redirects = 10
