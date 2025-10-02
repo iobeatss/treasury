@@ -1,6 +1,6 @@
 {
   "default": true,
-  "MD013": false,   // Désactive la limite de longueur des lignes
-  "MD033": false,   // Autorise le HTML inline
-  "MD041": false    // Autorise que le premier titre ne soit pas H1
+  "MD022": false, // headings entourés de lignes vides
+  "MD023": false, // heading doit commencer au début de la ligne
+  "MD032": false  // listes entourées de lignes vides
 }
