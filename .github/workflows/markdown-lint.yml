@@ -16,7 +16,7 @@ on:
 jobs:
   mdlint:
     runs-on: ubuntu-latest
-    continue-on-error: true   # ✅ soft-fail : même si ça échoue, le CI passe en vert
+    continue-on-error: true   # ✅ soft fail → le job peut échouer, mais le CI reste vert
 
     steps:
       - name: Checkout
