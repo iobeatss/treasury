@@ -1,79 +1,28 @@
-# ===============================
-#   Lychee Link Checker (IO Beats)
-# ===============================
+# ==========================================
+#  IO Beats — Config Lychee (exclusions optimisées)
+# ==========================================
 
-# Robustesse
-max_retries   = 3
-retry_wait    = 2
-timeout       = 25
-max_redirects = 10
-user_agent    = "Mozilla/5.0 (compatible; IOBeats-LinkChecker/1.1)"
-verbose       = true
-no_progress   = true
-
-# Tolérer certains codes souvent renvoyés par des anti-bots / rate-limits
-accept = [ "200..=299", "403", "429" ]
-
-# --- Exclure des domaines instables / dynamiques / rate-limited ---
+# Exclure tous les domaines IO Beats + block explorers
 exclude = [
-  # Mail / tel
-  "^mailto:", "^tel:",
-
-  # Explorers EVM (souvent 403/429)
-  "^https://(www\\.)?etherscan\\.io/.*",
-  "^https://(www\\.)?bscscan\\.com/.*",
-  "^https://(www\\.)?polygonscan\\.com/.*",
-  "^https://(www\\.)?basescan\\.org/.*",
-  "^https://(www\\.)?arbiscan\\.io/.*",
-  "^https://(www\\.)?optimistic\\.etherscan\\.io/.*",
-  "^https://(www\\.)?snowtrace\\.io/.*",
-
-  # GitHub brut / assets
-  "^https://raw\\.githubusercontent\\.com/.*",
-  "^https://github\\.com/.*/blob/.+\\?plain=1$",   # vues plain
-  "^https://github\\.com/.*/releases/download/.*", # assets lourds
-
-  # Badges / images dynamiques
-  "^https://img\\.shields\\.io/.*",
-  "^https://badgen\\.net/.*",
-
-  # Dashboards / widgets
-  "^https://dune\\.com/.*",
-  "^https://app\\.dune\\.com/.*",
-  "^https://snapshot\\.org/.*",
-
-  # Réseaux sociaux & messagerie (souvent bloque les bots)
-  "^https://(www\\.)?x\\.com/.*",
-  "^https://(www\\.)?twitter\\.com/.*",
-  "^https://(www\\.)?t\\.me/.*",
-  "^https://(www\\.)?telegram\\.me/.*",
-  "^https://(www\\.)?discord\\.gg/.*",
-  "^https://(www\\.)?discord\\.com/.*",
-  "^https://(www\\.)?instagram\\.com/.*",
-  "^https://(www\\.)?facebook\\.com/.*",
-  "^https://(www\\.)?linkedin\\.com/.*",
-  "^https://(www\\.)?youtube\\.com/.*",
-  "^https://(www\\.)?youtu\\.be/.*",
-
-  # Sites à redirections / cookies / anti-bot fréquents
-  "^https://linktr\\.ee/.*",
-  "^https://medium\\.com/.*",
-  "^https://mirror\\.xyz/.*",
-
-  # Images externes (CDN) – la valeur du lien change ou bloque le HEAD
-  "https?://.*\\.(?:png|jpg|jpeg|gif|webp|svg)(\\?.*)?$",
-
-  # Endpoints internes dynamiques (landing/app)
-  "^https://(open\\.)?iobeats\\.com/(?:app|login|signup|account|dashboard).*"
+    ".*iobeats.com.*",   # Tous les domaines et sous-domaines IO Beats
+    "https://etherscan.io",
+    "https://bscscan.com",
+    "https://polygonscan.com",
+    "https://basescan.org",
+    "https://arbiscan.io"
 ]
 
-# --- Exclure des chemins locaux (docs temporaires, changelogs lourds, etc.) ---
-exclude_path = [
-  "CHANGELOG.md",              # beaucoup d’ancres historiques
-  "docs/archive/",             # archives non maintenues
-  "static/",                   # assets locaux
-]
+# Timeout en secondes (plus haut pour éviter timeouts sur gros sites)
+timeout = 20
 
-# Option: ignorer les ancres (#section) pour réduire le bruit. Décommente si besoin.
-# require_https = true
-# check_anchors = false
+# Nombre max de redirections
+max_redirects = 10
+
+# Traiter 429 (Too Many Requests) comme valide
+accept = [200, 201, 202, 203, 204, 205, 206, 429]
+
+# Vérifier aussi les fichiers locaux (README, docs, etc.)
+include = ["*.md"]
+
+# Mode verbose activé pour logs clairs
+verbose = true
