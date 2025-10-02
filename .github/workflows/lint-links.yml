@@ -1,31 +1,46 @@
 name: lint-links
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
+    branches: [ "main" ]
+    paths:
+      - "**/*.md"
+      - ".lychee.toml"
+  push:
+    branches: [ "main" ]
+    paths:
+      - "**/*.md"
+      - ".lychee.toml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
 
 jobs:
-  link-checker:
+  lychee:
     runs-on: ubuntu-latest
-
     steps:
-      # 1) Récupérer le repo
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # 2) Lancer Lychee avec le fichier de config
-      - name: Run Lychee link checker
-        uses: lycheeverse/lychee-action@v2
+      # Optional: cache Lychee to speed up repeated checks
+      - name: Setup cache
+        uses: actions/cache@v4
         with:
-          args: --verbose --config lychee.toml .
+          path: ~/.cache/lychee
+          key: lychee-${{ runner.os }}-${{ hashFiles('**/*.md', '.lychee.toml') }}
+          restore-keys: |
+            lychee-${{ runner.os }}-
+
+      - name: Run lychee link check
+        uses: lycheeverse/lychee-action@v1.10.1
+        with:
+          args: >-
+            --config .lychee.toml
+            --verbose
+            --no-progress
+            --max-redirects 10
+            --accept 200..=299,403,429
+            .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # 3) Uploader le rapport en artifact
-      - name: Upload Lychee report
-        uses: actions/upload-artifact@v4
-        with:
-          name: lychee-report
-          path: ./lychee/out.md
-          if-no-files-found: warn
