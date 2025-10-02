@@ -1,45 +1,79 @@
 # ===============================
-#   Lychee Link Checker Config
+#   Lychee Link Checker (IO Beats)
 # ===============================
 
-# Nombre maximum de tentatives si un lien échoue
-max_retries = 3
+# Robustesse
+max_retries   = 3
+retry_wait    = 2
+timeout       = 25
+max_redirects = 10
+user_agent    = "Mozilla/5.0 (compatible; IOBeats-LinkChecker/1.1)"
+verbose       = true
+no_progress   = true
 
-# Temps d’attente entre les tentatives (secondes)
-retry_wait = 2
-
-# Timeout maximum pour une requête (secondes)
-timeout = 20
-
-# User-Agent (certains sites bloquent les bots)
-user_agent = "Mozilla/5.0 (compatible; IOBeats-LinkChecker/1.0; +https://iobeats.com)"
-
-# Accepte certains codes HTTP qui sont souvent renvoyés par erreur
+# Tolérer certains codes souvent renvoyés par des anti-bots / rate-limits
 accept = [ "200..=299", "403", "429" ]
 
-# Exclusions : liens connus comme instables ou qui bloquent les bots
+# --- Exclure des domaines instables / dynamiques / rate-limited ---
 exclude = [
-  "^mailto:",                # emails
-  "^tel:",                   # numéros de téléphone
-  # Block explorers (souvent 403/429 à cause du rate-limit)
-  "^https://(www\\.)?etherscan\\.io/address/0x[0-9a-fA-F]{40}",
-  "^https://(www\\.)?bscscan\\.com/address/0x[0-9a-fA-F]{40}",
-  "^https://(www\\.)?polygonscan\\.com/address/0x[0-9a-fA-F]{40}",
-  "^https://(www\\.)?basescan\\.org/address/0x[0-9a-fA-F]{40}",
-  "^https://(www\\.)?arbiscan\\.io/address/0x[0-9a-fA-F]{40}",
-  # Raw GitHub (parfois bloque ou rate-limit)
+  # Mail / tel
+  "^mailto:", "^tel:",
+
+  # Explorers EVM (souvent 403/429)
+  "^https://(www\\.)?etherscan\\.io/.*",
+  "^https://(www\\.)?bscscan\\.com/.*",
+  "^https://(www\\.)?polygonscan\\.com/.*",
+  "^https://(www\\.)?basescan\\.org/.*",
+  "^https://(www\\.)?arbiscan\\.io/.*",
+  "^https://(www\\.)?optimistic\\.etherscan\\.io/.*",
+  "^https://(www\\.)?snowtrace\\.io/.*",
+
+  # GitHub brut / assets
   "^https://raw\\.githubusercontent\\.com/.*",
-  # Badges (souvent redirigés ou variables)
+  "^https://github\\.com/.*/blob/.+\\?plain=1$",   # vues plain
+  "^https://github\\.com/.*/releases/download/.*", # assets lourds
+
+  # Badges / images dynamiques
   "^https://img\\.shields\\.io/.*",
-  # Dashboards externes (souvent dynamiques)
-  "^https://dune\\.com/.+"
+  "^https://badgen\\.net/.*",
+
+  # Dashboards / widgets
+  "^https://dune\\.com/.*",
+  "^https://app\\.dune\\.com/.*",
+  "^https://snapshot\\.org/.*",
+
+  # Réseaux sociaux & messagerie (souvent bloque les bots)
+  "^https://(www\\.)?x\\.com/.*",
+  "^https://(www\\.)?twitter\\.com/.*",
+  "^https://(www\\.)?t\\.me/.*",
+  "^https://(www\\.)?telegram\\.me/.*",
+  "^https://(www\\.)?discord\\.gg/.*",
+  "^https://(www\\.)?discord\\.com/.*",
+  "^https://(www\\.)?instagram\\.com/.*",
+  "^https://(www\\.)?facebook\\.com/.*",
+  "^https://(www\\.)?linkedin\\.com/.*",
+  "^https://(www\\.)?youtube\\.com/.*",
+  "^https://(www\\.)?youtu\\.be/.*",
+
+  # Sites à redirections / cookies / anti-bot fréquents
+  "^https://linktr\\.ee/.*",
+  "^https://medium\\.com/.*",
+  "^https://mirror\\.xyz/.*",
+
+  # Images externes (CDN) – la valeur du lien change ou bloque le HEAD
+  "https?://.*\\.(?:png|jpg|jpeg|gif|webp|svg)(\\?.*)?$",
+
+  # Endpoints internes dynamiques (landing/app)
+  "^https://(open\\.)?iobeats\\.com/(?:app|login|signup|account|dashboard).*"
 ]
 
-# Active la vérification détaillée
-verbose = true
+# --- Exclure des chemins locaux (docs temporaires, changelogs lourds, etc.) ---
+exclude_path = [
+  "CHANGELOG.md",              # beaucoup d’ancres historiques
+  "docs/archive/",             # archives non maintenues
+  "static/",                   # assets locaux
+]
 
-# Pas de barre de progression dans GitHub Actions
-no_progress = true
-
-# Nombre maximum de redirections
-max_redirects = 10
+# Option: ignorer les ancres (#section) pour réduire le bruit. Décommente si besoin.
+# require_https = true
+# check_anchors = false
