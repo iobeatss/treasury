@@ -1,6 +1,27 @@
+name: lint-links
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - "**/*.md"
+      - ".lychee.toml"
+  push:
+    branches: [ "main" ]
+    paths:
+      - "**/*.md"
+      - ".lychee.toml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
 jobs:
   lychee:
     runs-on: ubuntu-latest
+    # 👇 Optionnel pendant la stabilisation: décommente pour ne pas casser le CI
+    # continue-on-error: true
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -14,7 +35,7 @@ jobs:
             lychee-${{ runner.os }}-
 
       - name: Run lychee link check
-        uses: lycheeverse/lychee-action@v1
+        uses: lycheeverse/lychee-action@v1   # ✅ version stable
         with:
           args: >-
             --config .lychee.toml
