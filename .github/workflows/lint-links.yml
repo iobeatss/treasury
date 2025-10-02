@@ -23,8 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Optional: cache Lychee to speed up repeated checks
-      - name: Setup cache
+      - name: Cache lychee
         uses: actions/cache@v4
         with:
           path: ~/.cache/lychee
