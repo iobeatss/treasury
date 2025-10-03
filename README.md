@@ -10,10 +10,10 @@
 [![Docs](https://img.shields.io/badge/Docs-Available-brightgreen.svg)](https://github.com/iobeatss/iobeats-docs)
 [![Appendix B](https://img.shields.io/badge/Appendix%20B-v1.1%20Safe%20Multisig-orange.svg)](./docs/IOB_Treasury_AppendixB_v1.1.pdf)
 
-This repository contains all official documents related to **iO Beats Treasury governance, safes, locks, and vesting schedules**.  
+This repository contains all official documents related to **iO Beats Treasury governance, safes, locks, vesting schedules, and transparency reports**.  
 It is designed for **investors, exchanges (CEX), and the community** to ensure **maximum transparency**.
 
-> **Update (v1.1):** Appendix B has been upgraded to the **Safe Multisig Treasury Strategy** (4/7 governance), with **on-chain proofs**, **deflationary presale** (unsold tokens burned), and a **Legal Disclaimer**.
+> **Update (v1.2):** Integration of **NFT Yield Strategies** and **Sablier Vesting Reports** into the treasury documentation.
 
 ---
 
@@ -22,31 +22,16 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Appendix B v1.1 — Safe Multisig Treasury** → [`PDF`](./docs/IOB_Treasury_AppendixB_v1.1.pdf)  
 - **Vesting & Lock Strategy v1.1** → [`PDF`](./docs/IOB_Vesting_Lock_Strategy_v1.1.pdf)  
 - **Lock Distribution v1.1 (Multi-chain Table)** → [`PDF`](./docs/IOB_Treasury_Lock_Distribution_v1.1.pdf)  
+- **NFT Yield Strategies v1.0** → [`PDF`](./docs/nft/IOB_NFT_Yield_Strategies_v1.0.pdf)  
+- **Sablier Test Report v1.0** → [`PDF`](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
 
 ### 🔒 On-chain Proofs
 - **Ethereum (Mainnet) — Treasury Safe (4/7)**  
   - **Safe Address:** `0xA2952C5F625e59E21012FB92A8D8269Fdb324554`  
     ↳ [`Etherscan`](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554)  
-  - **First transaction (confirmation):**  
-    `0x3dc91e19fc3489a26a35fd986754cdb651ffbbc42cdb2c9956eef6d0758e8f4`  
-    ↳ [`Etherscan`](https://etherscan.io/tx/0x3dc91e19fc3489a26a35fd986754cdb651ffbbc42cdb2c9956eef6d0758e8f4)  
   - **Multisig Confirmation Report (PDF):**  
     [`docs/proofs/2025-10-01_Multisig_Transaction_Report.pdf`](./docs/proofs/2025-10-01_Multisig_Transaction_Report.pdf)
-
-**Legacy (archived):**
-- Appendix B v1.0 — Locks & Vesting → [`PDF`](./docs/IOB_Treasury_AppendixB_Locks_Vesting.pdf)
-
-**Other references:**
-- Audit Ready: Treasury Safe Multichain → [`PDF`](./docs/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
-- Safe Structure → [`PDF`](./docs/IOB_Safe_Structure.pdf)  
-- Multisig Architecture → [`PDF`](./docs/IOB_Safe_Multisig_Architecture.pdf)  
-- Governance & Branding → [`PDF`](./docs/IOB_Treasury_Governance.pdf)  
-- Treasury Multichain Report (EN) → [`PDF`](./docs/IOB_Treasury_Multichain_EN.pdf)  
-- Executive Summary → [`PDF`](./docs/IOB_Treasury_Multichain_Executive_Summary.pdf)  
-- Vault Addresses → [`addresses.md`](./docs/addresses.md)  
-- Roadmap → [`ROADMAP.md`](./docs/ROADMAP.md)  
-- Milestones → [`MILESTONES.md`](./docs/MILESTONES.md)  
 
 ---
 
@@ -55,19 +40,8 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Signers:** Founder, CoFounder, TechLead, CFO, Governance, Security, Backup  
 - **Chains:** Ethereum · Base · Polygon · Arbitrum · BNB Chain  
 - **Transparency:** On-chain proofs via official Safe addresses (see `addresses.md`)  
-- **Presale:** Deflationary — all unsold tokens are burned
-
----
-
-## 🏷 Labels
-To organize issues and tasks, the following labels are used:  
-- `transparency` → dashboards, reports, public data  
-- `governance` → DAO, Snapshot votes  
-- `automation` → GitHub Actions, scripts  
-- `reporting` → reports, exports  
-- `vesting` → on-chain locks, schedules  
-- `frontend` → UI, dashboards  
-- `docs` → documentation  
+- **Presale:** Deflationary — all unsold tokens are burned  
+- **Sablier Flows:** Continuous vesting for team/advisors with public proofs  
 
 ---
 
@@ -87,6 +61,7 @@ To organize issues and tasks, the following labels are used:
 **Objective:** Extend transparency and activate DAO governance.  
 - Dune Dashboard for real-time transparency  
 - DAO Snapshot governance voting  
+- Sablier-based vesting for team/advisors  
 
 ---
 
@@ -96,6 +71,7 @@ To organize issues and tasks, the following labels are used:
 - Monthly reporting automation (GitHub Actions + PDF)  
 - On-chain vesting → public reports  
 - Public IO Beats treasury dashboard (UI)  
+- NFT Treasury strategies integrated with DeFi vaults  
 
 ---
 
