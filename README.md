@@ -45,9 +45,50 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ---
 
-## 📌 Roadmap
-The complete roadmap with milestones, visual timeline (Mermaid), and proofs is available here:  
-👉 [View Full Roadmap](./docs/ROADMAP.md)
+## 📌 Roadmap & Milestones
+
+The full roadmap with **visual timeline, milestones, and proofs** is available here → [ROADMAP.md](./docs/ROADMAP.md)
+
+### 🚀 Milestone v1.0 — Release Treasury Transparency Pack  
+**Due date:** 2025-10-04  
+**Status:** ✅ Done  
+- Lock vaults on all chains  
+- Publish addresses & Appendix B  
+- Initial transparency documentation  
+
+📂 Proofs:  
+- [Appendix B v1.1](./docs/IOB_Treasury_AppendixB_v1.1.pdf)  
+- [Vesting & Lock Strategy v1.1](./docs/IOB_Vesting_Lock_Strategy_v1.1.pdf)  
+- [Sablier Test Report v1.0](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
+- [Safe Multisig Architecture](./docs/IOB_Safe_Multisig_Architecture.pdf)  
+- [Treasury Safe Addresses](./docs/addresses.md)
+
+---
+
+### 🔎 Milestone v1.1 — Transparency & Governance Expansion  
+**Due date:** 2025-12-31  
+**Status:** 🟡 In Progress  
+- Dune Dashboard for real-time transparency  
+- DAO Snapshot governance activation  
+- NFT Yield Strategies integration  
+
+📂 Proofs:  
+- [NFT Yield Strategies v1.0](./docs/nft/IOB_NFT_Yield_Strategies_v1.0.pdf)  
+- [Treasury Governance Report](./docs/IOB_Treasury_Governance.pdf)
+
+---
+
+### ⚡ Milestone v2.0 — Full Treasury Automation  
+**Due date:** 2026-06-30  
+**Status:** ⏳ Planned  
+- Monthly reporting automation (GitHub Actions + PDF)  
+- On-chain vesting → public dashboards (Sablier)  
+- Tier-2 → Tier-1 CEX Listings (progressive)  
+- Public IO Beats treasury dashboard (UI)  
+
+📂 Proofs / References:  
+- [Audit Ready Multichain Report](./docs/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
+- [Executive Summary](./docs/IOB_Treasury_Multichain_Executive_Summary.pdf)
 
 ---
 
