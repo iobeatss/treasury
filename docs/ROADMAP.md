@@ -1,47 +1,52 @@
 # 📌 IO Beats — Treasury Roadmap (2025 → 2026)
 
-Building the future of **music x DeFi x transparency**.  
-This roadmap tracks every milestone with **on-chain proofs**, **public reports**, and **DAO governance**.  
+Building the future of **music × DeFi × transparency**.  
+This roadmap tracks every milestone with **on-chain proofs**, **public reports**, and **DAO governance**.
+
+> **Status legend:** ✅ Done · 🟡 In Progress · ⏳ Planned
 
 ---
 
 ## 🛠️ Visual Timeline
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+  'primaryColor': '#FF9012',
+  'primaryTextColor': '#000000',
+  'primaryBorderColor': '#FF9012',
+  'lineColor': '#333333',
+  'secondaryColor': '#FFD29A',
+  'tertiaryColor': '#FFFFFF',
+  'noteBkgColor': '#F3F4F6',
+  'noteTextColor': '#111111'
+}}}%%
 timeline
     title IO Beats Treasury Roadmap
+
     Q3 2025 : Multi-chain Presale (Base → BNB → ETH → Polygon → Arbitrum)
+             : Liquidity Activation after each presell
              : Safe Multisig (4/7) ✅
              : Sablier Vesting Flow (Team / Advisors) ✅
              : Publish Appendix B v1.1 & Lock Strategy ✅
+
     Q4 2025 : NFT Yield Strategies Report ✅
-             : Android App (Beta) 🚀
-             : iOS App Submission (TestFlight) 🚀
-             : Rooftop Events Tour Announced (Canada) 🎶
-    Q1 2026 : DAO Snapshot Governance (Voting Live) 🗳️
-             : Cross-chain NFT Marketplace (ETH, BNB, Polygon, Base, Arbitrum)
-             : Holder Loyalty Program (Rewards + Perks)
-             : Expanded DeFi integrations (Beefy, Gamma, Aerodrome veAERO)
-    Q2 2026 : Rooftop Events Canada (MTL, Toronto, Vancouver)
-             : Exclusive NFT drops for attendees
-             : Tier-1 CEX Listings (Targeted) 📈
-    Q3 2026 : DAO Global Expansion (Asia, MENA, EU)
-             : Hybrid IRL x Metaverse events
-             : Major festival sponsorships 🎤
-    Q4 2026 : IO Beats Metaverse Music Festival 🌍
-             : Full Global Event Campaign
-             : Publish Global Transparency Recap
+             : Android App (Beta) 🟡
+             : iOS App Submission 🟡
+             : Rooftop Tour Canada — announcement & sponsors 🟡
 
+    Q1 2026 : DAO Snapshot Governance — voting live ⏳
+             : Cross-chain NFT Marketplace ⏳
+             : Holder Loyalty Program (rewards & perks) ⏳
+             : DeFi integrations (Beefy, Gamma, Aerodrome veAERO) ⏳
+             : Tier-2 CEX Listings (MEXC, Gate, Bitmart) ⏳
 
----
+    Q2 2026 : Rooftop Tour Canada (Montréal, Toronto, Vancouver) ⏳
+             : Exclusive NFT drops (attendees) ⏳
+             : Tier-1 CEX Listings (Binance, Coinbase, KuCoin, Bybit, OKX) ⏳
 
-### ⚠️ Important
-- J’ai supposé les chemins suivants dans `docs/` :  
-  - `docs/proofs/IOB_Sablier_Report_v1.0.pdf`  
-  - `docs/proofs/2025-10-01_Multisig_Transaction_Report.pdf`  
-  - `docs/nft/IOB_NFT_Yield_Strategies_v1.0_Clean_Optimized.pdf`  
-- Si tes noms de fichiers diffèrent (espaces, parenthèses), renomme-les pour des liens propres.  
+    Q3 2026 : DAO global expansion (Asia, MENA, EU) ⏳
+             : Hybrid IRL × Metaverse events — pilots ⏳
 
-Tu veux aussi un petit **README pour `docs/nft/`** et **`docs/proofs/`** (2–3 lignes chacun) pour que la navigation soit nickel ?
-::contentReference[oaicite:0]{index=0}
-
+    Q4 2026 : IO Beats Metaverse Music Festival ⏳
+             : Global campaign (major artists) ⏳
+             : Publish global transparency recap ⏳
