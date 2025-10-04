@@ -26,12 +26,24 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Sablier Test Report v1.0** → [`PDF`](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
 
-### 🔒 On-chain Proofs
-- **Ethereum (Mainnet) — Treasury Safe (4/7)**  
-  - **Safe Address:** `0xA2952C5F625e59E21012FB92A8D8269Fdb324554`  
-    ↳ [`Etherscan`](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554)  
-  - **Multisig Confirmation Report (PDF):**  
-    [`docs/proofs/2025-10-01_Multisig_Transaction_Report.pdf`](./docs/proofs/2025-10-01_Multisig_Transaction_Report.pdf)
+### 🌉 Per-Chain “IOB_Treasury_Transparency” Packs
+- **Ethereum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf) :contentReference[oaicite:0]{index=0}  
+- **BNB Chain** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf) :contentReference[oaicite:1]{index=1}  
+- **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf) :contentReference[oaicite:2]{index=2}  
+- **Polygon** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf) :contentReference[oaicite:3]{index=3}  
+- **Arbitrum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf) :contentReference[oaicite:4]{index=4}  
+
+### 🔒 On-chain Proofs (Safes — 4/7 Multisig)
+
+| Chain     | Safe Address | Explorer |
+|-----------|--------------|----------|
+| Ethereum  | `0xA2952C5F625e59E21012FB92A8D8269Fdb324554` | [Etherscan](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554) :contentReference[oaicite:5]{index=5} |
+| BNB Chain | `0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06` | [BscScan](https://bscscan.com/address/0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06) :contentReference[oaicite:6]{index=6} |
+| Base      | `0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6` | [BaseScan](https://basescan.org/address/0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6) :contentReference[oaicite:7]{index=7} |
+| Polygon   | `0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B` | [PolygonScan](https://polygonscan.com/address/0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B) :contentReference[oaicite:8]{index=8} |
+| Arbitrum  | `0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C` | [Arbiscan](https://arbiscan.io/address/0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C) :contentReference[oaicite:9]{index=9} |
+
+> **Transparency:** All presale funds and token allocations will be visible on-chain. Vesting will be executed via **Sablier**; LP tokens will be locked with public proof links.
 
 ---
 
@@ -46,59 +58,49 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 ---
 
 ## 📌 Roadmap & Milestones
-
-The full roadmap with **visual timeline, milestones, and proofs** is available here → [ROADMAP.md](./docs/ROADMAP.md)
+Full roadmap with **visual timeline, milestones, and proofs** → [`docs/ROADMAP.md`](./docs/ROADMAP.md)
 
 ### 🚀 Milestone v1.0 — Release Treasury Transparency Pack  
-**Due date:** 2025-10-04  
-**Status:** ✅ Done  
+**Due date:** 2025-10-04 — **Status:** ✅ Done  
 - Lock vaults on all chains  
 - Publish addresses & Appendix B  
 - Initial transparency documentation  
 
-📂 Proofs:  
-- [Appendix B v1.1](./docs/IOB_Treasury_AppendixB_v1.1.pdf)  
-- [Vesting & Lock Strategy v1.1](./docs/IOB_Vesting_Lock_Strategy_v1.1.pdf)  
-- [Sablier Test Report v1.0](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
-- [Safe Multisig Architecture](./docs/IOB_Safe_Multisig_Architecture.pdf)  
-- [Treasury Safe Addresses](./docs/addresses.md)
-
----
+**Proofs:**  
+- [`Appendix B v1.1`](./docs/IOB_Treasury_AppendixB_v1.1.pdf)  
+- [`Vesting & Lock Strategy v1.1`](./docs/IOB_Vesting_Lock_Strategy_v1.1.pdf)  
+- [`Sablier Test Report v1.0`](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
+- [`Safe Multisig Architecture`](./docs/IOB_Safe_Multisig_Architecture.pdf)  
+- [`Treasury Safe Addresses`](./docs/addresses.md)
 
 ### 🔎 Milestone v1.1 — Transparency & Governance Expansion  
-**Due date:** 2025-12-31  
-**Status:** 🟡 In Progress  
-- Dune Dashboard for real-time transparency  
+**Due date:** 2025-12-31 — **Status:** 🟡 In Progress  
+- Dune dashboard (real-time treasury & vesting)  
 - DAO Snapshot governance activation  
 - NFT Yield Strategies integration  
 
-📂 Proofs:  
-- [NFT Yield Strategies v1.0](./docs/nft/IOB_NFT_Yield_Strategies_v1.0.pdf)  
-- [Treasury Governance Report](./docs/IOB_Treasury_Governance.pdf)
-
----
+**Proofs:**  
+- [`NFT Yield Strategies v1.0`](./docs/nft/IOB_NFT_Yield_Strategies_v1.0.pdf)  
+- [`Treasury Governance Report`](./docs/IOB_Treasury_Governance.pdf)
 
 ### ⚡ Milestone v2.0 — Full Treasury Automation  
-**Due date:** 2026-06-30  
-**Status:** ⏳ Planned  
-- Monthly reporting automation (GitHub Actions + PDF)  
-- On-chain vesting → public dashboards (Sablier)  
-- Tier-2 → Tier-1 CEX Listings (progressive)  
-- Public IO Beats treasury dashboard (UI)  
+**Due date:** 2026-06-30 — **Status:** ⏳ Planned  
+- Monthly reporting automation (GitHub Actions → PDF)  
+- Public Sablier dashboards for vesting flows  
+- Tier-2 → Tier-1 CEX listings (progressive)  
+- Public IO Beats treasury dashboard (UI)
 
-📂 Proofs / References:  
-- [Audit Ready Multichain Report](./docs/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
-- [Executive Summary](./docs/IOB_Treasury_Multichain_Executive_Summary.pdf)
+**References:**  
+- [`Audit-Ready Multichain Report`](./docs/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
+- [`Executive Summary`](./docs/IOB_Treasury_Multichain_Executive_Summary.pdf)
 
 ---
 
 ## 🌐 Related Links
-- [Main Website](https://iobeats.com)  
-- [Music Player](https://open.iobeats.com)  
-- [Whitepaper](https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-white-paper.pdf)  
-- [Pitch Deck](https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-pitch-deck.pdf)  
-
----
+- **Website:** https://iobeats.com  
+- **Music Player:** https://open.iobeats.com  
+- **Whitepaper:** https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-white-paper.pdf  
+- **Pitch Deck:** https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-pitch-deck.pdf  
 
 ⚠️ **Note:** Vault addresses are placeholders until locks are executed on-chain.  
 _If present, see the full_ **[Legal Disclaimer](./DISCLAIMER.md)**.
