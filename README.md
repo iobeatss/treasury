@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/hero1.gif"
+       alt="IO Beats Treasury Banner" width="100%" />
+</p>
+
 [![Latest Release](https://img.shields.io/github/v/release/iobeatss/treasury?display_name=tag&sort=semver)](https://github.com/iobeatss/treasury/releases)
 [![Release workflow](https://img.shields.io/github/actions/workflow/status/iobeatss/treasury/release-treasury.yml?branch=main&label=Release%20workflow)](https://github.com/iobeatss/treasury/actions/workflows/release-treasury.yml)
 
@@ -9,11 +14,13 @@
 [![Deployment](https://img.shields.io/badge/Deployed-MultiChain-purple.svg)](https://github.com/iobeatss/IOB-Smart-contract#deployment)
 [![Docs](https://img.shields.io/badge/Docs-Available-brightgreen.svg)](https://github.com/iobeatss/iobeats-docs)
 [![Appendix B](https://img.shields.io/badge/Appendix%20B-v1.1%20Safe%20Multisig-orange.svg)](./docs/IOB_Treasury_AppendixB_v1.1.pdf)
+[![Payroll Infrastructure](https://img.shields.io/badge/Payroll%20Infrastructure-v1.0-blueviolet.svg)](./docs/IOB_Payroll_Infrastructure_v1.0.pdf)
+[![Academy Preview](https://img.shields.io/badge/Academy%20Preview-v1.0-9b59b6.svg)](./docs/IOB_Academy_Preview_v1.0.pdf)
 
 This repository contains all official documents related to **iO Beats Treasury governance, safes, locks, vesting schedules, and transparency reports**.  
 It is designed for **investors, exchanges (CEX), and the community** to ensure **maximum transparency**.
 
-> **Update (v1.2):** Integration of **NFT Yield Strategies** and **Sablier Vesting Reports** into the treasury documentation.
+> **Update (v1.2):** Integration of **NFT Yield Strategies**, **Sablier Vesting Reports**, and new **Payroll & Academy Transparency Docs**.
 
 ---
 
@@ -24,6 +31,8 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Lock Distribution v1.1 (Multi-chain Table)** → [`PDF`](./docs/IOB_Treasury_Lock_Distribution_v1.1.pdf)  
 - **NFT Yield Strategies v1.0** → [`PDF`](./docs/nft/IOB_NFT_Yield_Strategies_v1.0.pdf)  
 - **Sablier Test Report v1.0** → [`PDF`](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
+- **Payroll Infrastructure v1.0** → [`PDF`](./docs/IOB_Payroll_Infrastructure_v1.0.pdf)  
+- **IOB Academy Preview v1.0** → [`PDF`](./docs/IOB_Academy_Preview_v1.0.pdf)  
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
 
 ---
@@ -45,7 +54,7 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 | Ethereum  | `0xA2952C5F625e59E21012FB92A8D8269Fdb324554` | [Etherscan](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554) |
 | BNB Chain | `0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06` | [BscScan](https://bscscan.com/address/0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06) |
 | Base      | `0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6` | [BaseScan](https://basescan.org/address/0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6) |
-| Polygon   | `0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B` | [PolygonScan](https://polygonscan.com/address/0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B) |
+| Polygon   | `0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B` | [PolygonScan](https://polygonscan.com/address/0xdce35f5f9ab98c6dd671b15fb23602f67e296c0b) |
 | Arbitrum  | `0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C` | [Arbiscan](https://arbiscan.io/address/0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C) |
 
 > **Transparency:** All presale funds and token allocations will be visible on-chain. Vesting will be executed via **Sablier**; LP tokens will be locked with public proof links.
@@ -83,9 +92,13 @@ Full roadmap with **visual timeline, milestones, and proofs** → [`docs/ROADMAP
 - Dune dashboard (real-time treasury & vesting)  
 - DAO Snapshot governance activation  
 - NFT Yield Strategies integration  
+- Payroll Infrastructure publishing  
+- IO Beats Academy launch  
 
 **Proofs:**  
 - [`NFT Yield Strategies v1.0`](./docs/nft/IOB_NFT_Yield_Strategies_v1.0.pdf)  
+- [`Payroll Infrastructure v1.0`](./docs/IOB_Payroll_Infrastructure_v1.0.pdf)  
+- [`IOB Academy Preview v1.0`](./docs/IOB_Academy_Preview_v1.0.pdf)  
 - [`Treasury Governance Report`](./docs/IOB_Treasury_Governance.pdf)
 
 ### ⚡ Milestone v2.0 — Full Treasury Automation  
