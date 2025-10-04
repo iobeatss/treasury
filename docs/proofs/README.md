@@ -1,6 +1,6 @@
 ## 📂 Proofs
 
-- **Treasury Safe Addresses (all chains)** → [`docs/addresses.md`](./main/docs/addresses.md)
+- **Treasury Safe Addresses (all chains)** → [`docs/addresses.md`](./docs/addresses.md)
 - **Multisig Transaction Report (Ethereum)** → [`PDF`](./docs/proofs/2025-10-01_Multisig_Transaction_Report.pdf)
 - **Sablier Vesting — Test Report v1.0** → [`PDF`](./docs/proofs/IOB_Sablier_Report_v1.0.pdf)
 
