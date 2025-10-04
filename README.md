@@ -26,22 +26,27 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Sablier Test Report v1.0** → [`PDF`](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
 
+---
+
 ### 🌉 Per-Chain “IOB_Treasury_Transparency” Packs
-- **Ethereum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf) :contentReference[oaicite:0]{index=0}  
-- **BNB Chain** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf) :contentReference[oaicite:1]{index=1}  
-- **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf) :contentReference[oaicite:2]{index=2}  
-- **Polygon** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf) :contentReference[oaicite:3]{index=3}  
-- **Arbitrum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf) :contentReference[oaicite:4]{index=4}  
+
+- **Ethereum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf)  
+- **BNB Chain** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf)  
+- **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf)  
+- **Polygon** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf)  
+- **Arbitrum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf)
+
+---
 
 ### 🔒 On-chain Proofs (Safes — 4/7 Multisig)
 
 | Chain     | Safe Address | Explorer |
 |-----------|--------------|----------|
-| Ethereum  | `0xA2952C5F625e59E21012FB92A8D8269Fdb324554` | [Etherscan](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554) :contentReference[oaicite:5]{index=5} |
-| BNB Chain | `0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06` | [BscScan](https://bscscan.com/address/0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06) :contentReference[oaicite:6]{index=6} |
-| Base      | `0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6` | [BaseScan](https://basescan.org/address/0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6) :contentReference[oaicite:7]{index=7} |
-| Polygon   | `0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B` | [PolygonScan](https://polygonscan.com/address/0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B) :contentReference[oaicite:8]{index=8} |
-| Arbitrum  | `0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C` | [Arbiscan](https://arbiscan.io/address/0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C) :contentReference[oaicite:9]{index=9} |
+| Ethereum  | `0xA2952C5F625e59E21012FB92A8D8269Fdb324554` | [Etherscan](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554) |
+| BNB Chain | `0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06` | [BscScan](https://bscscan.com/address/0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06) |
+| Base      | `0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6` | [BaseScan](https://basescan.org/address/0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6) |
+| Polygon   | `0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B` | [PolygonScan](https://polygonscan.com/address/0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B) |
+| Arbitrum  | `0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C` | [Arbiscan](https://arbiscan.io/address/0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C) |
 
 > **Transparency:** All presale funds and token allocations will be visible on-chain. Vesting will be executed via **Sablier**; LP tokens will be locked with public proof links.
 
