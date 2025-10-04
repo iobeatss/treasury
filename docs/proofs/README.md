@@ -11,11 +11,11 @@
 - **Safe Multisig Architecture** → [PDF](https://github.com/iobeatss/treasury/blob/main/docs/IOB_Safe_Multisig_Architecture.pdf) · [raw](https://raw.githubusercontent.com/iobeatss/treasury/main/docs/IOB_Safe_Multisig_Architecture.pdf)
 
 **Per-Chain Transparency Packs**
-- ETH → [PDF](https://github.com/iobeatss/treasury/blob/main/docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf)
-- BNB → [PDF](https://github.com/iobeatss/treasury/blob/main/docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf)
-- Base → [PDF](https://github.com/iobeatss/treasury/blob/main/docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf)
-- Polygon → [PDF](https://github.com/iobeatss/treasury/blob/main/docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf)
-- Arbitrum → [PDF](https://github.com/iobeatss/treasury/blob/main/docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf)
+- **Ethereum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf)  
+- **BNB Chain** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf)  
+- **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf)  
+- **Polygon** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf)  
+- **Arbitrum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf)
 
 **Additional Reports**
 - **Payroll Infrastructure v1.0** → [PDF](https://github.com/iobeatss/treasury/blob/main/docs/IOB_Payroll_Infrastructure_v1.0.pdf) · [raw](https://raw.githubusercontent.com/iobeatss/treasury/main/docs/IOB_Payroll_Infrastructure_v1.0.pdf)
