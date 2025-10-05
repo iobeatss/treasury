@@ -1,6 +1,24 @@
-# Changelog
+# 🧾 Changelog
 
 All notable changes to **IOB Treasury Appendix B** are documented here.
+
+---
+
+## [1.2] – 2025-10-05
+### Added
+- Introduced **Dune Real-Time Transparency Dashboard** for live treasury tracking across all chains.  
+  See: [Dune Dashboard](https://dune.com/web_33_11_22/iob-safe-multichain-dashboard)
+- Added **docs/addresses.md** containing official verified Gnosis Safe addresses.  
+  See: [addresses.md](./docs/addresses.md)
+- Updated **README.md** with transparency and Dune integration section.  
+  See: [README.md](./README.md)
+- Implemented new KPIs in Dune (Net Flow, Chain Distribution, Multisig Activity, Vesting preview).
+- Included **CHANGELOG v1.2** documenting this integration.
+
+### Notes
+- Dashboard auto-refreshes every ~2–3 hours.  
+- Fully verifiable with explorers: **Etherscan**, **BscScan**, **PolygonScan**, **BaseScan**, **Arbiscan**.  
+- Supports **cross-chain TVL**, **multisig activity logs**, and **Sablier vesting (coming soon)**.
 
 ---
 
