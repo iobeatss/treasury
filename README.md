@@ -20,7 +20,7 @@
 This repository contains all official documents related to **iO Beats Treasury governance, safes, locks, vesting schedules, and transparency reports**.  
 It is designed for **investors, exchanges (CEX), and the community** to ensure **maximum transparency**.
 
-> **Update (v1.2):** Integration of **NFT Yield Strategies**, **Sablier Vesting Reports**, and new **Payroll & Academy Transparency Docs**.
+> **Update (v1.3):** Added **Global DAO Analytics Report** & **Safe Multichain Transparency Report**, expanding Dune-based on-chain monitoring.
 
 ---
 
@@ -39,6 +39,8 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ### 🌉 Per-Chain “IOB_Treasury_Transparency” Packs
 
+- **Global DAO Analytics Report v1.0** → [`PDF`](./docs/transparency/IOB_DAO_Analytics_Transparency_Report_v1.0.pdf)  
+- **Safe Multichain Transparency Report v1.0** → [`PDF`](./docs/transparency/IOB_Safe_Multichain_Transparency_Report_v1.0.pdf)  
 - **Ethereum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf)  
 - **BNB Chain** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf)  
 - **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf)  
