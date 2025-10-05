@@ -4,6 +4,22 @@ All notable changes to **IOB Treasury Appendix B** are documented here.
 
 ---
 
+## [1.3] – 2025-10-06
+### Added
+- Added **Global DAO Analytics Report v1.0** — high-level overview of DAO operations, governance, and audits.  
+  See: [IOB_DAO_Analytics_Transparency_Report_v1.0.pdf](./docs/transparency/IOB_DAO_Analytics_Transparency_Report_v1.0.pdf)
+- Added **Safe Multichain Transparency Report v1.0** — unified multi-chain treasury analysis using Dune Analytics.  
+  See: [IOB_Safe_Multichain_Transparency_Report_v1.0.pdf](./docs/transparency/IOB_Safe_Multichain_Transparency_Report_v1.0.pdf)
+- Updated **README.md** to include both reports under “Per-Chain Transparency Packs”.  
+  See: [README.md](./README.md)
+
+### Improved
+- Expanded Transparency section with DAO-level analytics and multi-chain synchronization.  
+- Enhanced public traceability of vault balances and inflows/outflows via Dune.  
+- Standardized all PDF naming conventions under `/docs/transparency/`.
+
+---
+
 ## [1.2] – 2025-10-05
 ### Added
 - Introduced **Dune Real-Time Transparency Dashboard** for live treasury tracking across all chains.  
