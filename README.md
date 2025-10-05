@@ -47,6 +47,20 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ---
 
+## 📊 Dune — Real-Time Transparency Dashboard
+
+- **Public Dashboard:** [https://dune.com/web_33_11_22/iob-safe-multichain-dashboard](https://dune.com/web_33_11_22/iob-safe-multichain-dashboard)  
+- **Dune Org (mirror):** [https://dune.com/iobeats_dao](https://dune.com/iobeats_dao)
+
+The dashboard aggregates **real-time inflows, outflows, and balances** across  
+**Ethereum, Base, Polygon, BNB Chain, and Arbitrum**.  
+Data updates every **2–3 hours** and is fully verifiable via the official Gnosis Safe addresses and chain explorers.
+
+> **KPIs:** Total USD (all chains), Net Flow (7D/30D), Transaction Count (multisig),  
+> allocation per chain, and Sablier vesting tracking (coming soon).
+
+---
+
 ### 🔒 On-chain Proofs (Safes — 4/7 Multisig)
 
 | Chain     | Safe Address | Explorer |
@@ -57,7 +71,8 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 | Polygon   | `0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B` | [PolygonScan](https://polygonscan.com/address/0xdce35f5f9ab98c6dd671b15fb23602f67e296c0b) |
 | Arbitrum  | `0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C` | [Arbiscan](https://arbiscan.io/address/0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C) |
 
-> **Transparency:** All presale funds and token allocations will be visible on-chain. Vesting will be executed via **Sablier**; LP tokens will be locked with public proof links.
+> **Transparency:** All presale funds and token allocations are visible on-chain.  
+> Vesting executed via **Sablier**; LP tokens locked with public proofs.
 
 ---
 
