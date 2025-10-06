@@ -3,6 +3,23 @@
        alt="IO Beats Treasury Banner" width="100%" />
 </p>
 
+## 🔗 Quick Menu
+- **Repos:**  
+  [IOB Smart Contracts](https://github.com/iobeatss/IOB-Smart-contract) ·
+  [Treasury](https://github.com/iobeatss/treasury) ·
+  [iobeats-player](https://github.com/iobeatss/iobeats-player) ·
+  [BeatsApe](https://github.com/iobeatss/BeatsApe) ·
+  [iobeats-docs](https://github.com/iobeatss/iobeats-docs) ·
+  [iobeats-logo-assets](https://github.com/iobeatss/iobeats-logo-assets)  
+
+- **Docs:**  
+  [GitBook](https://whitepaper.iobeats.com/) ·
+  [Whitepaper (PDF)](https://open.iobeats.com/doc/iobeats-white-paper.pdf) ·
+  [Pitch Deck (PDF)](https://open.iobeats.com/doc/iobeats-pitch-deck.pdf) ·
+  [Governance (PDF)](https://open.iobeats.com/doc/iobeats-Governance-plan.pdf) ·
+  [Token Distribution (PDF)](https://open.iobeats.com/doc/iobeats-token-distribution.pdf)
+
+---
 # 💎 iO Beats — Treasury Transparency
 
 [![Milestones](https://img.shields.io/badge/Milestones-Roadmap-blue)](./docs/ROADMAP.md)
