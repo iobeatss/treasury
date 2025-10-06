@@ -34,10 +34,10 @@ timeline
              : iOS App Submission 🟡
              : Rooftop Tour Canada — announcement & sponsors 🟡
 
-    Q1 2026 : DAO Snapshot Governance — voting live ⏳
+    Q1 2026 : DAO Snapshot Governance — voting live 🟡
              : Cross-chain NFT Marketplace ⏳
              : Holder Loyalty Program (rewards & perks) ⏳
-             : DeFi integrations (Beefy, Gamma, Aerodrome veAERO) ⏳
+             : DeFi integrations (Beefy, Gamma, Aerodrome veAERO) 🟡
              : Tier-2 CEX Listings (MEXC, Gate, Bitmart) ⏳
 
     Q2 2026 : Rooftop Tour Canada (Montréal, Toronto, Vancouver) ⏳
