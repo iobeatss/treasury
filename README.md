@@ -13,6 +13,7 @@
   [iobeats-logo-assets](https://github.com/iobeatss/iobeats-logo-assets)  
 
 ---
+
 # 💎 iO Beats — Treasury Transparency
 
 [![Milestones](https://img.shields.io/badge/Milestones-Roadmap-blue)](./docs/ROADMAP.md)
@@ -20,9 +21,13 @@
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-blue.svg?logo=solidity)](https://docs.soliditylang.org/en/v0.8.24/)
 [![Deployment](https://img.shields.io/badge/Deployed-MultiChain-purple.svg)](https://github.com/iobeatss/IOB-Smart-contract#deployment)
 [![Docs](https://img.shields.io/badge/Docs-Available-brightgreen.svg)](https://github.com/iobeatss/iobeats-docs)
-[![Appendix B](https://img.shields.io/badge/Appendix%20B-v1.1%20Safe%20Multisig-orange.svg)](./docs/IOB_Treasury_AppendixB_v1.1.pdf)
-[![Payroll Infrastructure](https://img.shields.io/badge/Payroll%20Infrastructure-v1.0-blueviolet.svg)](./docs/IOB_Payroll_Infrastructure_v1.0.pdf)
-[![Academy Preview](https://img.shields.io/badge/Academy%20Preview-v1.0-9b59b6.svg)](./docs/IOB_Academy_Preview_v1.0.pdf)
+[![Snapshot](https://img.shields.io/badge/Vote%20Now-Snapshot-blueviolet?logo=snapshot&logoColor=white)](https://snapshot.box/#/s:iobdao.eth)
+[![Dune Dashboard](https://img.shields.io/badge/Analytics-Dune-orange?logo=dune&logoColor=white)](https://dune.com/iobeats_dao)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/rQSCaxPNs5)
+[![Telegram](https://img.shields.io/badge/Telegram-Community-26A5E4?logo=telegram&logoColor=white)](https://t.me/iobeatscommunity)
+[![Reddit](https://img.shields.io/badge/Reddit-r/io_beats-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/r/io_beats/)
+[![Stars](https://img.shields.io/github/stars/iobeatss?style=social)](https://github.com/iobeatss)
+[![Twitter Follow](https://img.shields.io/twitter/follow/iobeats?style=social)](https://twitter.com/iobeats)
 
 This repository contains all official documents related to **iO Beats Treasury governance, safes, locks, vesting schedules, and transparency reports**.  
 It is designed for **investors, exchanges (CEX), and the community** to ensure **maximum transparency**.
@@ -56,17 +61,22 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ---
 
-## 📊 Dune — Real-Time Transparency Dashboard
+## 📊 DAO Governance & Transparency
 
-- **Public Dashboard:** [https://dune.com/web_33_11_22/iob-safe-multichain-dashboard](https://dune.com/web_33_11_22/iob-safe-multichain-dashboard)  
-- **Dune Org (mirror):** [https://dune.com/iobeats_dao](https://dune.com/iobeats_dao)
+### 🗳️ Snapshot DAO — Governance Voting
+- **Live space:** [iobdao.eth](https://snapshot.box/#/s:iobdao.eth)  
+- **Purpose:** DAO voting for proposals, treasury management & roadmap approvals  
+- **Genesis Proposal:** [#001 The Birth of IO Beats DAO](https://snapshot.box/#/s:iobdao.eth/proposal/0x470c...)  
+- **Participation:** Open to all $IOB holders  
 
-The dashboard aggregates **real-time inflows, outflows, and balances** across  
-**Ethereum, Base, Polygon, BNB Chain, and Arbitrum**.  
-Data updates every **2–3 hours** and is fully verifiable via the official Gnosis Safe addresses and chain explorers.
+### 📈 Dune Analytics — Real-Time Transparency
+- **Live dashboard:** [https://dune.com/iobeats_dao](https://dune.com/iobeats_dao)  
+- **Aggregates:** inflows/outflows, balances, multisig transactions, vesting data  
+- **Chains monitored:** Ethereum, Base, Polygon, BNB Chain, Arbitrum  
+- **Update frequency:** Every 2–3 hours  
 
-> **KPIs:** Total USD (all chains), Net Flow (7D/30D), Transaction Count (multisig),  
-> allocation per chain, and Sablier vesting tracking (coming soon).
+> 🔍 **KPIs:** Total USD value, Net Flow (7D/30D), Transactions per chain,  
+> Allocation per Safe, and Vesting Tracking (Sablier-based, coming soon)
 
 ---
 
@@ -85,7 +95,7 @@ Data updates every **2–3 hours** and is fully verifiable via the official Gnos
 
 ---
 
-## 🔐 Governance
+## 🔐 Governance Structure
 - **Multisig Policy:** 4/7 required signatures  
 - **Signers:** Founder, CoFounder, TechLead, CFO, Governance, Security, Backup  
 - **Chains:** Ethereum · Base · Polygon · Arbitrum · BNB Chain  
@@ -141,6 +151,11 @@ Full roadmap with **visual timeline, milestones, and proofs** → [`docs/ROADMAP
 ## 🌐 Related Links
 - **Website:** https://iobeats.com  
 - **Music Player:** https://open.iobeats.com  
+- **Snapshot DAO:** https://snapshot.box/#/s:iobdao.eth  
+- **Dune Analytics:** https://dune.com/iobeats_dao  
+- **Discord:** https://discord.com/invite/rQSCaxPNs5  
+- **Telegram:** https://t.me/iobeatscommunity  
+- **Reddit:** https://www.reddit.com/r/io_beats/  
 - **Whitepaper:** https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-white-paper.pdf  
 - **Pitch Deck:** https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-pitch-deck.pdf  
 
