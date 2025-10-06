@@ -66,7 +66,7 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 ### 🗳️ Snapshot DAO — Governance Voting
 - **Live space:** [iobdao.eth](https://snapshot.box/#/s:iobdao.eth)  
 - **Purpose:** DAO voting for proposals, treasury management & roadmap approvals  
-- **Genesis Proposal:** [#001 The Birth of IO Beats DAO](https://snapshot.box/#/s:iobdao.eth/proposal/0x470c...)  
+- **Genesis Proposal:** [#001 The Birth of IO Beats DAO](https://snapshot.box/#/s:iobdao.eth/proposal/0x4e0ec421ed5cf0d6b6d07ef97727f15f61b0881bf20df0fdeab14caa868a663c)  
 - **Participation:** Open to all $IOB holders  
 
 ### 📈 Dune Analytics — Real-Time Transparency
