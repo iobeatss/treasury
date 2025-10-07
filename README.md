@@ -52,14 +52,17 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ### 🌉 Per-Chain “IOB_Treasury_Transparency” Packs
 
+[![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.3-orange?logo=adobeacrobatreader)](./docs/transparency/IOB_Dune_Transparency_Automation_v1.3.pdf)
+
 - **Global DAO Analytics Report v1.0** → [`PDF`](./docs/transparency/IOB_DAO_Analytics_Transparency_Report_v1.0.pdf)  
 - **Safe Multichain Transparency Report v1.0** → [`PDF`](./docs/transparency/IOB_Safe_Multichain_Transparency_Report_v1.0.pdf)  
-- **IOB Dune Transparency Automation v1.3** → [`PDF`](./docs/transparency/IOB_Dune_Transparency_Automation_v1.0.pdf)  
+- **IOB Dune Transparency Automation v1.3** → [`PDF`](./docs/transparency/IOB_Dune_Transparency_Automation_v1.3.pdf)  
 - **Ethereum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf)  
 - **BNB Chain** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf)  
 - **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf)  
 - **Polygon** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf)  
 - **Arbitrum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf)
+
 
 
 ---
