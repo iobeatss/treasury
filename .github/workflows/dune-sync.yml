@@ -1,0 +1,68 @@
+name: Sync Dune Data
+
+on:
+  schedule:
+    - cron: "0 12 * * *"      # Tous les jours à midi UTC
+  workflow_dispatch:
+
+jobs:
+  fetch-dune:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Execute Dune query
+        id: exec
+        env:
+          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
+          QUERY_ID: "1234567"        # ⚠️ Remplace par l’ID de ta query Dune
+        run: |
+          mkdir -p data/dune
+          RESP=$(curl -s -X POST "https://api.dune.com/api/v1/query/${QUERY_ID}/execute" \
+            -H "X-Dune-API-Key: ${DUNE_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d '{"performance":"medium"}')
+          echo "$RESP" | tee data/dune/last_execute_response.json
+          EXEC_ID=$(echo "$RESP" | jq -r '.execution_id')
+          echo "execution_id=$EXEC_ID" >> $GITHUB_OUTPUT
+
+      - name: Wait for Dune results
+        id: wait
+        env:
+          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
+          EXEC_ID: ${{ steps.exec.outputs.execution_id }}
+        run: |
+          for i in {1..60}; do
+            STATUS=$(curl -s "https://api.dune.com/api/v1/execution/${EXEC_ID}/status" \
+              -H "X-Dune-API-Key: ${DUNE_API_KEY}" | jq -r '.state')
+            echo "Status: $STATUS"
+            if [ "$STATUS" = "QUERY_STATE_COMPLETED" ] || [ "$STATUS" = "SUCCESS" ]; then
+              break
+            elif [ "$STATUS" = "QUERY_STATE_FAILED" ] || [ "$STATUS" = "FAILED" ]; then
+              echo "Execution failed"; exit 1
+            fi
+            sleep 5
+          done
+
+      - name: Download results JSON
+        env:
+          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
+          EXEC_ID: ${{ steps.exec.outputs.execution_id }}
+        run: |
+          curl -s "https://api.dune.com/api/v1/execution/${EXEC_ID}/results" \
+            -H "X-Dune-API-Key: ${DUNE_API_KEY}" \
+            -o data/dune/query_${{ steps.exec.outputs.execution_id }}.json
+
+      - name: Commit & Push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/dune/
+          git commit -m "chore(dune): update query results"
+          git push
