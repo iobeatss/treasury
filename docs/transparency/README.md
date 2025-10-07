@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/hero1.gif"
+       alt="IO Beats Treasury Transparency Banner" width="100%" />
+</p>
+
 # 🪪 IO Beats DAO — Treasury Transparency Reports
 
 [![Dune Dashboard](https://img.shields.io/badge/Dune-Dashboard-blue?logo=dune&logoColor=white)](https://dune.com/iobeats_dao)
@@ -9,7 +14,7 @@
 ## 📘 Overview
 
 Welcome to the **IO Beats DAO Transparency Hub**.  
-This section centralizes **audited financial reports**, **on-chain dashboards**, and **multichain treasury documents**.  
+This section centralizes **audited financial reports**, **on-chain dashboards**, and **multichain treasury documents**.
 
 All transparency materials are **verifiable on-chain**, **publicly accessible**, and **audited by Cyberscope**.
 
@@ -29,7 +34,7 @@ All transparency materials are **verifiable on-chain**, **publicly accessible**,
 ## 🪙 Per-Chain Transparency Packs
 
 Each blockchain maintains an independent transparency pack containing multisig activity, inflows/outflows,  
-staking allocations, and DeFi strategy updates.  
+staking allocations, and DeFi strategy updates.
 
 | Chain | Report | Version | Link |
 |--------|---------|----------|------|
@@ -53,12 +58,28 @@ staking allocations, and DeFi strategy updates.
 
 ---
 
+## 💰 Presale Transparency Reports (v1.0 — Premium Orange Edition)
+
+These reports provide on-chain transparency for all **IO Beats DAO presales** across the five networks.  
+Each report includes Safe addresses, token distribution (2B IOB per chain), fund flow charts,  
+and legal disclosures audited by Cyberscope.
+
+| Chain | Safe Treasury | Report | Audit | Dune Dashboard |
+|--------|----------------|--------|--------|----------------|
+| **Ethereum** | [0xA2952C5F625e59E21012FB92A8D8269Fdb324554](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554) | [📄 IOB_ETH_Presale_Preview_v1.0_Premium_Orange.pdf](../presale/IOB_ETH_Presale_Preview_v1.0_Premium_Orange.pdf) | [Cyberscope](https://www.cyberscope.io/audits/iob) | [Dune](https://dune.com/iobeats_dao) |
+| **BNB Chain** | [0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06](https://bscscan.com/address/0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06) | [📄 IOB_BNB_Presale_Preview_v1.0_doc.pdf](../presale/IOB_BNB_Presale_Preview_v1.0_doc.pdf) | [Cyberscope](https://www.cyberscope.io/audits/iob) | [Dune](https://dune.com/iobeats_dao) |
+| **Base (L2)** | [0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6](https://basescan.org/address/0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6) | [📄 IOB_Base_Presale_Preview_v1.0_Premium_Orange.pdf](../presale/IOB_Base_Presale_Preview_v1.0_Premium_Orange.pdf) | [Cyberscope](https://www.cyberscope.io/audits/iob) | [Dune](https://dune.com/iobeats_dao) |
+| **Polygon** | [0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B](https://polygonscan.com/address/0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B) | [📄 IOB_Polygon_Presale_Preview_v1.0_Premium_Orange.pdf](../presale/IOB_Polygon_Presale_Preview_v1.0_Premium_Orange.pdf) | [Cyberscope](https://www.cyberscope.io/audits/iob) | [Dune](https://dune.com/iobeats_dao) |
+| **Arbitrum** | [0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C](https://arbiscan.io/address/0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C) | [📄 IOB_Arbitrum_Presale_Preview_v1.0_Premium_Orange.pdf](../presale/IOB_Arbitrum_Presale_Preview_v1.0_Premium_Orange.pdf) | [Cyberscope](https://www.cyberscope.io/audits/iob) | [Dune](https://dune.com/iobeats_dao) |
+
+---
+
 ## ⚙️ Automation & Dune Integration
 
 Transparency data is continuously updated through:
 - **Dune Dashboards** — On-chain inflows/outflows & Safe balances  
 - **GitHub Actions** — Automated document sync and version tagging  
-- **JSON Logs** — Each chain’s latest data stored in `/data/dune/`  
+- **JSON Logs** — Each chain’s latest data stored in `/data/dune/`
 
 ```mermaid
 flowchart LR
