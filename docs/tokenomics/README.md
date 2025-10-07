@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/hero1.gif"
-       alt="IO Beats Banner" width="100%" />
-</p>
-
 # 💰 IO Beats — Tokenomics v1.02 (Investor Edition)
 
 [![Docs](https://img.shields.io/badge/Docs-Treasury-green?logo=github)](https://github.com/iobeatss/treasury)
