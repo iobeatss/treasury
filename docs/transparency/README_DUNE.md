@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/hero1.gif"
-       alt="IO Beats Treasury Banner" width="100%" />
-</p>
-
 # 📊 IOB_Dune_Transparency_Automation_v1.0  
 *Automated Multichain Safe Analytics & Treasury Sync*
 
