@@ -1,0 +1,26 @@
+name: Snapshot DAO Sync
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # toutes les 6 heures
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch latest Snapshot proposals
+        run: |
+          mkdir -p data/snapshot
+          curl -s "https://hub.snapshot.org/graphql" \
+            -H "Content-Type: application/json" \
+            -d '{"query":"{ proposals(first:5, where:{space_in:[\"iobdao.eth\"]}, orderBy:\"created\", orderDirection:desc){id title body state start end author}}"}' \
+            | jq '.' > data/snapshot/latest.json
+
+      - name: Commit updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/snapshot/latest.json
+          git commit -m "chore(snapshot): sync latest proposals"
+          git push
