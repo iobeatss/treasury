@@ -23,7 +23,7 @@
 [![Docs](https://img.shields.io/badge/Docs-Available-brightgreen.svg)](https://github.com/iobeatss/iobeats-docs)
 [![Snapshot](https://img.shields.io/badge/Vote%20Now-Snapshot-blueviolet?logo=snapshot&logoColor=white)](https://snapshot.box/#/s:iobdao.eth)
 [![Dune Dashboard](https://img.shields.io/badge/Analytics-Dune-orange?logo=dune&logoColor=white)](https://dune.com/iobeats_dao)
-[![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.3-orange?logo=adobeacrobatreader)](./docs/transparency/IOB_Dune_Transparency_Automation_v1.3.pdf)
+[![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.0-orange?logo=adobeacrobatreader)](./docs/transparency/IOB_Dune_Transparency_Automation_v1.0.pdf)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/rQSCaxPNs5)
 [![Telegram](https://img.shields.io/badge/Telegram-Community-26A5E4?logo=telegram&logoColor=white)](https://t.me/iobeatscommunity)
 [![Reddit](https://img.shields.io/badge/Reddit-r/io_beats-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/r/io_beats/)
