@@ -2,17 +2,31 @@ name: Dune Sync — Arbitrum Safe
 
 on:
   schedule:
-    - cron: "25 2 * * *"
+    - cron: "25 2 * * *"   # 02:25 UTC
   workflow_dispatch:
+
+# 🔒 Verrou global commun à tous les workflows Dune
+concurrency:
+  group: treasury-dune-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    permissions: { contents: write }
-    concurrency: { group: dune-arb, cancel-in-progress: false }
+
     steps:
-      - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y jq
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Execute Dune query (ARBITRUM)
         id: exec
@@ -20,18 +34,23 @@ jobs:
           DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
           QUERY_ID: "5916028"
         run: |
+          set -e
           mkdir -p data/dune/arbitrum
           RESP=$(curl -s -X POST "https://api.dune.com/api/v1/query/${QUERY_ID}/execute" \
             -H "X-Dune-API-Key: ${DUNE_API_KEY}" -H "Content-Type: application/json" \
             -d '{"performance":"medium"}')
           EXEC_ID=$(echo "$RESP" | jq -r '.execution_id')
-          echo "execution_id=$EXEC_ID" >> $GITHUB_OUTPUT
+          if [ -z "$EXEC_ID" ] || [ "$EXEC_ID" = "null" ]; then
+            echo "No execution_id returned"; echo "$RESP"; exit 1
+          fi
+          echo "execution_id=$EXEC_ID" >> "$GITHUB_OUTPUT"
 
       - name: Wait for results
         env:
           DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
           EXEC_ID: ${{ steps.exec.outputs.execution_id }}
         run: |
+          set -e
           for i in {1..60}; do
             STATE=$(curl -s "https://api.dune.com/api/v1/execution/${EXEC_ID}/status" \
               -H "X-Dune-API-Key: ${DUNE_API_KEY}" | jq -r '.state')
@@ -48,15 +67,36 @@ jobs:
           DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
           EXEC_ID: ${{ steps.exec.outputs.execution_id }}
         run: |
+          set -e
           curl -s "https://api.dune.com/api/v1/execution/${EXEC_ID}/results" \
             -H "X-Dune-API-Key: ${DUNE_API_KEY}" \
             -o "data/dune/arbitrum/${EXEC_ID}.json"
           cp "data/dune/arbitrum/${EXEC_ID}.json" "data/dune/arbitrum/latest.json"
 
-      - name: Commit & push
+      - name: Commit & push (safe rebase)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/dune/arbitrum/
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/dune/arbitrum/*.json || true
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
           git commit -m "chore(dune): update Arbitrum Safe analytics"
-          git push
+
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main || true
+            if git push origin HEAD:main; then
+              echo "Push succeeded on attempt $i"
+              exit 0
+            fi
+            echo "Push failed (attempt $i). Retrying…"
+            sleep $((i*2))
+          done
+
+          echo "Push failed after retries."
+          exit 1
