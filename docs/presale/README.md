@@ -78,7 +78,8 @@ Each report is chain-verified, signed, and timestamped for **on-chain proof of i
 
 ```mermaid
 flowchart LR
-  A[Presale Data Collection] --> B[DAO Verification (Multisig Signers)]
-  B --> C[Cyberscope Audit Validation]
-  C --> D[PDF Publishing on GitHub]
-  D --> E[Dune Analytics Sync]
+  A["Presale Data Collection"] --> B["DAO Verification — Multisig Signers"]
+  B --> C["Cyberscope Audit Validation"]
+  C --> D["PDF Publishing on GitHub"]
+  D --> E["Dune Analytics Sync"]
+
