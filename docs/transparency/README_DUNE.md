@@ -42,7 +42,6 @@ These datasets feed the IO Beats **Treasury Transparency Reports** and **Dune** 
 ---
 
 ## ⚙️ Automation Architecture
-
 ```mermaid
 flowchart LR;
     A[Dune Query (SQL)] -->|API Call| B[GitHub Actions Workflow];
