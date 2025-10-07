@@ -47,5 +47,5 @@ These datasets feed the IO Beats **Treasury Transparency Reports** and **Dune** 
 flowchart LR
     A[Dune Query (SQL)] -->|API Call| B[GitHub Actions Workflow]
     B -->|Execution ID| C[Fetch JSON Results]
-    C -->|Write Files| D[data/dune/<chain>/latest.json]
+    C -->|Write Files| D[data/dune/&lt;chain&gt;/latest.json]
     D -->|Feeds| E[IO Beats Transparency Reports & Dashboards]
