@@ -6,13 +6,12 @@
 # 📊 IOB_Dune_Transparency_Automation_v1.0  
 *Automated Multichain Safe Analytics & Treasury Sync*
 
-<p align="center">
   <a href="../../.github/workflows/dune-ethereum.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-ethereum.yml/badge.svg" alt="Ethereum Sync" /></a>
   <a href="../../.github/workflows/dune-bnb.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-bnb.yml/badge.svg" alt="BNB Sync" /></a>
   <a href="../../.github/workflows/dune-base.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-base.yml/badge.svg" alt="Base Sync" /></a>
   <a href="../../.github/workflows/dune-polygon.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-polygon.yml/badge.svg" alt="Polygon Sync" /></a>
   <a href="../../.github/workflows/dune-arbitrum.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-arbitrum.yml/badge.svg" alt="Arbitrum Sync" /></a>
-</p>
+
 
 ---
 
@@ -42,9 +41,11 @@ These datasets feed the IO Beats **Treasury Transparency Reports** and **Dune** 
 ---
 
 ## ⚙️ Automation Architecture
+
 ```mermaid
-flowchart LR;
-    A[Dune Query (SQL)] -->|API Call| B[GitHub Actions Workflow];
-    B -->|Execution ID| C[Fetch JSON Results];
-    C -->|Write Files| D[data/dune/&lt;chain&gt;/latest.json];
-    D -->|Feeds| E[IO Beats Transparency Reports & Dashboards];
+%%{init: {'theme': 'default', 'themeVariables': { 'primaryColor': '#f97316', 'edgeLabelBackground':'#ffffff', 'fontSize': '14px'}}}%%
+flowchart LR
+    A["Dune Query (SQL)"] -->|"API Call"| B["GitHub Actions Workflow"]
+    B -->|"Execution ID"| C["Fetch JSON Results"]
+    C -->|"Write Files"| D["data/dune/<chain>/latest.json"]
+    D -->|"Feeds"| E["IO Beats Transparency Reports & Dashboards"]
