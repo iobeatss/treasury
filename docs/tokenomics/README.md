@@ -52,7 +52,7 @@ It aligns **artists, fans, investors, and builders** through fair token distribu
 ## 📊 Visual Distribution
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/iobeatss/treasury/main/docs/tokenomics/IOB_Tokenomics_PieChart_v1.02.png"
+  <img src="https://github.com/iobeatss/treasury/blob/main/docs/tokenomics/IOB_Tokenomics_PieChart_v1.02.png"
        alt="IO Beats Tokenomics Chart v1.02" width="80%" />
 </p>
 
