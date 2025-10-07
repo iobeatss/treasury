@@ -23,6 +23,7 @@
 [![Docs](https://img.shields.io/badge/Docs-Available-brightgreen.svg)](https://github.com/iobeatss/iobeats-docs)
 [![Snapshot](https://img.shields.io/badge/Vote%20Now-Snapshot-blueviolet?logo=snapshot&logoColor=white)](https://snapshot.box/#/s:iobdao.eth)
 [![Dune Dashboard](https://img.shields.io/badge/Analytics-Dune-orange?logo=dune&logoColor=white)](https://dune.com/iobeats_dao)
+[![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.3-orange?logo=adobeacrobatreader)](./docs/transparency/IOB_Dune_Transparency_Automation_v1.3.pdf)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/rQSCaxPNs5)
 [![Telegram](https://img.shields.io/badge/Telegram-Community-26A5E4?logo=telegram&logoColor=white)](https://t.me/iobeatscommunity)
 [![Reddit](https://img.shields.io/badge/Reddit-r/io_beats-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/r/io_beats/)
@@ -53,11 +54,13 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 - **Global DAO Analytics Report v1.0** → [`PDF`](./docs/transparency/IOB_DAO_Analytics_Transparency_Report_v1.0.pdf)  
 - **Safe Multichain Transparency Report v1.0** → [`PDF`](./docs/transparency/IOB_Safe_Multichain_Transparency_Report_v1.0.pdf)  
+- **IOB Dune Transparency Automation v1.3** → [`PDF`](./docs/transparency/IOB_Dune_Transparency_Automation_v1.0.pdf)  
 - **Ethereum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf)  
 - **BNB Chain** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf)  
 - **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf)  
 - **Polygon** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf)  
 - **Arbitrum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf)
+
 
 ---
 
