@@ -12,16 +12,17 @@ This roadmap tracks every milestone with **on-chain proofs**, **public reports**
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {
   'primaryColor': '#FF9012',
-  'primaryTextColor': '#000000',
+  'primaryTextColor': '#111111',
   'primaryBorderColor': '#FF9012',
-  'lineColor': '#333333',
-  'secondaryColor': '#FFD29A',
+  'lineColor': '#4B5563',
+  'secondaryColor': '#FFF3E0',
   'tertiaryColor': '#FFFFFF',
-  'noteBkgColor': '#F3F4F6',
-  'noteTextColor': '#111111'
+  'noteBkgColor': '#F9FAFB',
+  'noteTextColor': '#111827',
+  'fontFamily': 'Inter, Arial, sans-serif'
 }}}%%
 timeline
-    title IO Beats Treasury Roadmap
+    title IO Beats Treasury Roadmap (2025 → 2026)
 
     Q3 2025 : Multi-chain Presale (Base → BNB → ETH → Polygon → Arbitrum)
              : Liquidity Activation after each presell
@@ -33,6 +34,7 @@ timeline
              : Android App (Beta) 🟡
              : iOS App Submission 🟡
              : Rooftop Tour Canada — announcement & sponsors 🟡
+             : Global DAO Analytics Report (Dune Automation) ✅
 
     Q1 2026 : DAO Snapshot Governance — voting live 🟡
              : Cross-chain NFT Marketplace ⏳
@@ -43,10 +45,12 @@ timeline
     Q2 2026 : Rooftop Tour Canada (Montréal, Toronto, Vancouver) ⏳
              : Exclusive NFT drops (attendees) ⏳
              : Tier-1 CEX Listings (Binance, Coinbase, KuCoin, Bybit, OKX) ⏳
+             : Publish DAO Global Transparency v2.0 🟡
 
     Q3 2026 : DAO global expansion (Asia, MENA, EU) ⏳
              : Hybrid IRL × Metaverse events — pilots ⏳
+             : Treasury Governance Report v2.0 ⏳
 
     Q4 2026 : IO Beats Metaverse Music Festival ⏳
              : Global campaign (major artists) ⏳
-             : Publish global transparency recap ⏳
+             : Publish Global Transparency Recap ⏳
