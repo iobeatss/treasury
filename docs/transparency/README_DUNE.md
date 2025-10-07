@@ -1,4 +1,4 @@
-# 📊 IOB_Dune_Transparency_Automation_v1.0  
+# 📊 IOB Dune Transparency Automation v1.0  
 *Automated Multichain Safe Analytics & Treasury Sync*
 
   <a href="../../.github/workflows/dune-ethereum.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-ethereum.yml/badge.svg" alt="Ethereum Sync" /></a>
