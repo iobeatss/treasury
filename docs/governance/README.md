@@ -13,7 +13,7 @@ on topics such as **treasury management, partnerships, DeFi integrations, and co
 
 Every proposal is published through **Snapshot** and executed via **Safe multisig**, ensuring full transparency.
 
-> 📘 Full framework and constitution are available below as official DAO documents.
+> 📘 Full framework, constitution, and legal disclosure are available below as official DAO documents.
 
 ---
 
@@ -22,10 +22,11 @@ Every proposal is published through **Snapshot** and executed via **Safe multisi
 | Document | Version | Date | Link |
 |-----------|----------|------|------|
 | **IOB DAO Constitution** | v1.0 | Oct 2025 | [📄 PDF](./IOB_DAO_Constitution_v1.0_Premium.pdf) |
+| **DAO Legal Disclosure & Risk Statement** | v1.0 | Oct 2025 | [📄 PDF](./IOB_DAO_LegalDisclosure_v1.0_Premium.pdf) |
 | **DAO Governance Framework (Premium Edition)** | v1.0 | Oct 2025 | [📄 PDF](./IOB_DAO_Governance_Framework_v1.0_PremiumEdition.pdf) |
 | **Snapshot Governance Activation Report** | v1.0 | Oct 2025 | [📄 PDF](./DAO_Snapshot_Governance_Activation_IOB_Vote.pdf) |
 
-> 🧠 These documents define the DAO’s structure, membership, quorum rules, proposal cycles, and security clauses.
+> 🧠 These documents define the DAO’s structure, membership, quorum rules, proposal cycles, security clauses, and legal posture.
 
 ---
 
@@ -39,7 +40,7 @@ Every proposal is published through **Snapshot** and executed via **Safe multisi
 | 💎 **Treasury Transparency v1.0** | 🟡 Ongoing | DAO Treasury | [View on Snapshot](https://snapshot.box/#/s:iobdao.eth/proposal/0x...example...) |
 | 🧠 **Governance Expansion v1.1** | ⏳ Planned | DAO Governance | [View on Snapshot](https://snapshot.box/#/s:iobdao.eth/proposal/0x...example...) |
 
-> ✅ *Automatically refreshed by GitHub Actions (every 6 hours via `snapshot-sync.yml`)*  
+> ✅ *Automatically refreshed by GitHub Actions (every 6 hours via `snapshot-sync.yml`).*  
 
 ---
 
