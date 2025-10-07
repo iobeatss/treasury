@@ -44,10 +44,6 @@ These datasets feed the IO Beats **Treasury Transparency Reports** and **Dune** 
 ## ⚙️ Automation Architecture
 
 
-GitHub attend **une seule ligne** : ` ```mermaid `
-
-Colle exactement ce bloc (copie/colle tel quel, sans espace avant les backticks) :
-
 ```mermaid
 flowchart LR
     A[Dune Query (SQL)] -->|API Call| B[GitHub Actions Workflow]
