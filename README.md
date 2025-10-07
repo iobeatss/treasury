@@ -52,7 +52,7 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ### 🌉 Per-Chain “IOB_Treasury_Transparency” Packs
 
-[![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.3-orange?logo=adobeacrobatreader)](./docs/transparency/IOB_Dune_Transparency_Automation_v1.3.pdf)
+[![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.0-orange?logo=adobeacrobatreader)](./docs/transparency/IOB_Dune_Transparency_Automation_v1.0.pdf)
 
 - **Global DAO Analytics Report v1.0** → [`PDF`](./docs/transparency/IOB_DAO_Analytics_Transparency_Report_v1.0.pdf)  
 - **Safe Multichain Transparency Report v1.0** → [`PDF`](./docs/transparency/IOB_Safe_Multichain_Transparency_Report_v1.0.pdf)  
