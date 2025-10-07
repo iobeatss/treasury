@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/hero1.gif"
-       alt="IO Beats DAO Banner" width="100%" />
-</p>
-
 # 🗳️ IO Beats DAO — Governance & Proposals  
 
 [![Vote Now on Snapshot](https://img.shields.io/badge/Vote%20Now-Snapshot-blueviolet?logo=snapshot&logoColor=white)](https://snapshot.box/#/s:iobdao.eth)
