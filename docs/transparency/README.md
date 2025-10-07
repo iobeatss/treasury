@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/hero1.gif"
-       alt="IO Beats Treasury Transparency Banner" width="100%" />
-</p>
-
 # 🪪 IO Beats DAO — Treasury Transparency Reports
 
 [![Dune Dashboard](https://img.shields.io/badge/Dune-Dashboard-blue?logo=dune&logoColor=white)](https://dune.com/iobeats_dao)
