@@ -50,9 +50,29 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ---
 
-### 🌉 Per-Chain “IOB_Treasury_Transparency” Packs
+### 💰 Tokenomics & Investor Reports
 
-[![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.0-orange?logo=adobeacrobatreader)](./docs/transparency/IOB_Dune_Transparency_Automation_v1.0.pdf)
+[![PDF Download](https://img.shields.io/badge/Download-Tokenomics_v1.02-orange?logo=adobeacrobatreader)](./docs/tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf)
+
+The **IO Beats Tokenomics v1.02 (Investor Edition)** provides a full breakdown of  
+the $IOB allocation, vesting model, DAO treasury distribution, and governance logic.
+
+| Category | Allocation | Vesting / Lock | Notes |
+|-----------|-------------|----------------|-------|
+| **Presale** | 20% (10B IOB) | 10% TGE · 2M cliff · 18M vesting | Multi-chain fundraising |
+| **Community Reserve** | 25% (12.5B IOB) | DAO unlock max 5%/year | Growth, airdrops, quests |
+| **Staking Rewards** | 15% (7.5B IOB) | 48M vesting | Long-term holder rewards |
+| **Liquidity** | 15% (7.5B IOB) | LP lock 12–24M | Pools via Uniswap, Pancake, Aerodrome |
+| **Teams & Contributors** | 10% (5B IOB) | 6M cliff · 36M vesting | Core team & ops |
+| **Founders** | 5% (2.5B IOB) | 12M cliff · 48M vesting | Long-term commitment |
+| **Treasury / Partnerships** | 10% (5B IOB) | Lock 24M | Strategic funds & listings |
+
+> 📄 **Full report:** [`IOB_Tokenomics_v1.02_InvestorEdition.pdf`](./docs/tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf)  
+> **Audit:** [Cyberscope](https://www.cyberscope.io/audits/iob) · **Transparency Dashboard:** [Dune](https://dune.com/iobeats_dao)
+
+---
+
+### 🌉 Per-Chain “IOB_Treasury_Transparency” Packs
 
 - **Global DAO Analytics Report v1.0** → [`PDF`](./docs/transparency/IOB_DAO_Analytics_Transparency_Report_v1.0.pdf)  
 - **Safe Multichain Transparency Report v1.0** → [`PDF`](./docs/transparency/IOB_Safe_Multichain_Transparency_Report_v1.0.pdf)  
@@ -62,8 +82,6 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf)  
 - **Polygon** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf)  
 - **Arbitrum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf)
-
-
 
 ---
 
@@ -98,59 +116,6 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 > **Transparency:** All presale funds and token allocations are visible on-chain.  
 > Vesting executed via **Sablier**; LP tokens locked with public proofs.
-
----
-
-## 🔐 Governance Structure
-- **Multisig Policy:** 4/7 required signatures  
-- **Signers:** Founder, CoFounder, TechLead, CFO, Governance, Security, Backup  
-- **Chains:** Ethereum · Base · Polygon · Arbitrum · BNB Chain  
-- **Transparency:** On-chain proofs via official Safe addresses (see `addresses.md`)  
-- **Presale:** Deflationary — all unsold tokens are burned  
-- **Sablier Flows:** Continuous vesting for team/advisors with public proofs  
-
----
-
-## 📌 Roadmap & Milestones
-Full roadmap with **visual timeline, milestones, and proofs** → [`docs/ROADMAP.md`](./docs/ROADMAP.md)
-
-### 🚀 Milestone v1.0 — Release Treasury Transparency Pack  
-**Due date:** 2025-10-04 — **Status:** ✅ Done  
-- Lock vaults on all chains  
-- Publish addresses & Appendix B  
-- Initial transparency documentation  
-
-**Proofs:**  
-- [`Appendix B v1.1`](./docs/IOB_Treasury_AppendixB_v1.1.pdf)  
-- [`Vesting & Lock Strategy v1.1`](./docs/IOB_Vesting_Lock_Strategy_v1.1.pdf)  
-- [`Sablier Test Report v1.0`](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
-- [`Safe Multisig Architecture`](./docs/IOB_Safe_Multisig_Architecture.pdf)  
-- [`Treasury Safe Addresses`](./docs/addresses.md)
-
-### 🔎 Milestone v1.1 — Transparency & Governance Expansion  
-**Due date:** 2025-12-31 — **Status:** 🟡 In Progress  
-- Dune dashboard (real-time treasury & vesting)  
-- DAO Snapshot governance activation  
-- NFT Yield Strategies integration  
-- Payroll Infrastructure publishing  
-- IO Beats Academy launch  
-
-**Proofs:**  
-- [`NFT Yield Strategies v1.0`](./docs/nft/IOB_NFT_Yield_Strategies_v1.0.pdf)  
-- [`Payroll Infrastructure v1.0`](./docs/IOB_Payroll_Infrastructure_v1.0.pdf)  
-- [`IOB Academy Preview v1.0`](./docs/IOB_Academy_Preview_v1.0.pdf)  
-- [`Treasury Governance Report`](./docs/IOB_Treasury_Governance.pdf)
-
-### ⚡ Milestone v2.0 — Full Treasury Automation  
-**Due date:** 2026-06-30 — **Status:** ⏳ Planned  
-- Monthly reporting automation (GitHub Actions → PDF)  
-- Public Sablier dashboards for vesting flows  
-- Tier-2 → Tier-1 CEX listings (progressive)  
-- Public IO Beats treasury dashboard (UI)
-
-**References:**  
-- [`Audit-Ready Multichain Report`](./docs/IOB_Treasury_Safe_Multichain_AuditReady.pdf)  
-- [`Executive Summary`](./docs/IOB_Treasury_Multichain_Executive_Summary.pdf)
 
 ---
 
