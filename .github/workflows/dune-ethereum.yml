@@ -1,64 +1,51 @@
-name: Dune Sync — Ethereum Safe
+name: Dune — Ethereum
 
 on:
   schedule:
-    - cron: "5 2 * * *"
+    - cron: "6,36 * * * *"
   workflow_dispatch:
 
-jobs:
-  sync:
-    runs-on: ubuntu-latest
-    permissions: { contents: write }
-    concurrency:
-      group: dune-eth
-      cancel-in-progress: false
-    steps:
-      - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y jq
+concurrency:
+  group: treasury-dune-sync
+  cancel-in-progress: false
 
-      - name: Execute Dune query (ETH)
-        id: exec
-        env:
-          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
-          QUERY_ID: "5913366"
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ⬇️ Remplace par ta commande qui écrit data/dune/ethereum/latest.json
+      - name: Run Dune query
         run: |
           mkdir -p data/dune/ethereum
-          RESP=$(curl -s -X POST "https://api.dune.com/api/v1/query/${QUERY_ID}/execute" \
-            -H "X-Dune-API-Key: ${DUNE_API_KEY}" -H "Content-Type: application/json" \
-            -d '{"performance":"medium"}')
-          EXEC_ID=$(echo "$RESP" | jq -r '.execution_id')
-          echo "execution_id=$EXEC_ID" >> $GITHUB_OUTPUT
+          echo '{}' > data/dune/ethereum/latest.json  # placeholder
 
-      - name: Wait for results
-        env:
-          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
-          EXEC_ID: ${{ steps.exec.outputs.execution_id }}
+      - name: Commit & push results
         run: |
-          for i in {1..60}; do
-            STATE=$(curl -s "https://api.dune.com/api/v1/execution/${EXEC_ID}/status" \
-              -H "X-Dune-API-Key: ${DUNE_API_KEY}" | jq -r '.state')
-            echo "State: $STATE"
-            case "$STATE" in
-              SUCCESS|QUERY_STATE_COMPLETED) break ;;
-              FAILED|QUERY_STATE_FAILED) exit 1 ;;
-            esac
-            sleep 5
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dune/**/*.json || true
+          git add data/dune/*.json || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(dune): update ethereum results"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main || true
+            if git push origin HEAD:main; then
+              echo "Push OK (try $i)"; exit 0
+            fi
+            echo "Retry $i…"; sleep $((i*2))
           done
-
-      - name: Download results JSON
-        env:
-          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
-          EXEC_ID: ${{ steps.exec.outputs.execution_id }}
-        run: |
-          curl -s "https://api.dune.com/api/v1/execution/${EXEC_ID}/results" \
-            -H "X-Dune-API-Key: ${DUNE_API_KEY}" \
-            -o "data/dune/ethereum/${EXEC_ID}.json"
-          cp "data/dune/ethereum/${EXEC_ID}.json" "data/dune/ethereum/latest.json"
-
-      - name: Commit & push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/dune/ethereum/
-          git commit -m "chore(dune): update Ethereum Safe analytics"
-          git push
+          echo "Push failed after retries"; exit 1
