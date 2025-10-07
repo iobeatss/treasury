@@ -1,4 +1,4 @@
-# 📊 IOB Dune Transparency Automation v1.0  
+# 📊 IOB Dune Transparency Automation v1.3  
 *Automated Multichain Safe Analytics & Treasury Sync*
 
   <a href="../../.github/workflows/dune-ethereum.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-ethereum.yml/badge.svg" alt="Ethereum Sync" /></a>
@@ -7,6 +7,12 @@
   <a href="../../.github/workflows/dune-polygon.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-polygon.yml/badge.svg" alt="Polygon Sync" /></a>
   <a href="../../.github/workflows/dune-arbitrum.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-arbitrum.yml/badge.svg" alt="Arbitrum Sync" /></a>
 
+
+---
+
+## 📄 Download PDF Report
+
+[![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.3-orange?logo=adobeacrobatreader)](./IOB_Dune_Transparency_Automation_v1.3.pdf)
 
 ---
 
@@ -20,6 +26,8 @@ real-time inflows / outflows / balance data and stores the exported results as J
 `data/dune/<chain>/latest.json`.
 
 These datasets feed the IO Beats **Treasury Transparency Reports** and **Dune** visual dashboards.
+
+---
 
 ---
 
