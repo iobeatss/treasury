@@ -5,20 +5,24 @@
 
 # 📊 IOB_Dune_Transparency_Automation_v1.0  
 *Automated Multichain Safe Analytics & Treasury Sync*
-[![Ethereum Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-ethereum.yml/badge.svg)](../../.github/workflows/dune-ethereum.yml)
-[![BNB Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-bnb.yml/badge.svg)](../../.github/workflows/dune-bnb.yml)
-[![Base Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-base.yml/badge.svg)](../../.github/workflows/dune-base.yml)
-[![Polygon Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-polygon.yml/badge.svg)](../../.github/workflows/dune-polygon.yml)
-[![Arbitrum Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-arbitrum.yml/badge.svg)](../../.github/workflows/dune-arbitrum.yml)
+
+<p align="center">
+  <a href="../../.github/workflows/dune-ethereum.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-ethereum.yml/badge.svg" alt="Ethereum Sync" /></a>
+  <a href="../../.github/workflows/dune-bnb.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-bnb.yml/badge.svg" alt="BNB Sync" /></a>
+  <a href="../../.github/workflows/dune-base.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-base.yml/badge.svg" alt="Base Sync" /></a>
+  <a href="../../.github/workflows/dune-polygon.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-polygon.yml/badge.svg" alt="Polygon Sync" /></a>
+  <a href="../../.github/workflows/dune-arbitrum.yml"><img src="https://github.com/iobeatss/treasury/actions/workflows/dune-arbitrum.yml/badge.svg" alt="Arbitrum Sync" /></a>
+</p>
 
 ---
 
 ## 🌍 Overview
-The **Dune Transparency Program** automatically synchronizes on-chain Safe analytics across
+
+The **Dune Transparency Program** automatically synchronizes on-chain Safe analytics across  
 **Ethereum, BNB Chain, Base, Polygon, and Arbitrum**.
 
-Each chain has a dedicated Dune dashboard and a GitHub Actions workflow that fetches
-real-time inflows / outflows / balance data and stores the exported results as JSON at  
+Each chain has a dedicated Dune dashboard and a GitHub Actions workflow that fetches  
+real-time inflows / outflows / balance data and stores the exported results as JSON under  
 `data/dune/<chain>/latest.json`.
 
 These datasets feed the IO Beats **Treasury Transparency Reports** and **Dune** visual dashboards.
