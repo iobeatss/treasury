@@ -38,6 +38,23 @@ Every proposal is verified on-chain and published through **Snapshot** for maxim
 
 ---
 
+## 📘 DAO Snapshot Governance Activation
+
+The **DAO Snapshot Governance Activation Report** outlines how IO Beats DAO initiated its  
+on-chain governance infrastructure across **Ethereum, Base, Polygon, BNB Chain, and Arbitrum**.  
+
+It includes:
+- Governance parameters (quorum, proposal threshold, voting delay)  
+- DAO structure and ENS portfolio  
+- Multi-chain Snapshot setup  
+- Official links (GitHub, Dune, Snapshot)  
+- Legal disclaimer  
+
+📄 **Read the full report:**  
+[DAO_Snapshot_Governance_Activation_IOB_Vote.pdf](./DAO_Snapshot_Governance_Activation_IOB_Vote.pdf)
+
+---
+
 ## ⚙️ Automation Details
 
 This governance tracker is powered by:
