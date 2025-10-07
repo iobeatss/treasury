@@ -8,26 +8,28 @@
 
 ## 🌍 Overview
 
-The **IO Beats DAO Governance System** allows $IOB holders to propose, discuss, and vote on key topics  
-including **treasury management, partnerships, DeFi integrations, and ecosystem development**.  
+The **IO Beats DAO Governance System** defines how $IOB holders participate in decentralized decision-making  
+on topics such as **treasury management, partnerships, DeFi integrations, and community development**.  
 
-Every proposal is verified on-chain and published through **Snapshot** for maximum transparency.
+Every proposal is published through **Snapshot** and executed via **Safe multisig**, ensuring full transparency.
 
-> 📘 Full framework (Premium Edition):  
-> [`IOB_DAO_Governance_Framework_v1.0_PremiumEdition.pdf`](./IOB_DAO_Governance_Framework_v1.0_PremiumEdition.pdf)
-
----
-
-## 📡 Live Snapshot Space
-
-> **DAO Space:** <https://snapshot.box/#/s:iobdao.eth>  
-> **Network:** Ethereum  
-> **Voting System:** Weighted by $IOB holdings  
-> **Governance Model:** 1 token = 1 vote
+> 📘 Full framework and constitution are available below as official DAO documents.
 
 ---
 
-## 🧾 Latest Proposals (Auto-Updated)
+## 📘 Official Governance Documents
+
+| Document | Version | Date | Link |
+|-----------|----------|------|------|
+| **IOB DAO Constitution** | v1.0 | Oct 2025 | [📄 PDF](./IOB_DAO_Constitution_v1.0_Premium.pdf) |
+| **DAO Governance Framework (Premium Edition)** | v1.0 | Oct 2025 | [📄 PDF](./IOB_DAO_Governance_Framework_v1.0_PremiumEdition.pdf) |
+| **Snapshot Governance Activation Report** | v1.0 | Oct 2025 | [📄 PDF](./DAO_Snapshot_Governance_Activation_IOB_Vote.pdf) |
+
+> 🧠 These documents define the DAO’s structure, membership, quorum rules, proposal cycles, and security clauses.
+
+---
+
+## 🧾 Latest Proposals
 
 📁 Data Source → [`data/snapshot/latest.json`](../../data/snapshot/latest.json)
 
@@ -37,48 +39,40 @@ Every proposal is verified on-chain and published through **Snapshot** for maxim
 | 💎 **Treasury Transparency v1.0** | 🟡 Ongoing | DAO Treasury | [View on Snapshot](https://snapshot.box/#/s:iobdao.eth/proposal/0x...example...) |
 | 🧠 **Governance Expansion v1.1** | ⏳ Planned | DAO Governance | [View on Snapshot](https://snapshot.box/#/s:iobdao.eth/proposal/0x...example...) |
 
-> ✅ *Automatically refreshed by GitHub Actions (every 6 hours via `snapshot-sync.yml`).*
+> ✅ *Automatically refreshed by GitHub Actions (every 6 hours via `snapshot-sync.yml`)*  
 
 ---
 
-## 🧭 How to Propose
+## 🧩 Governance Structure
 
-1. **Draft** your idea (title, rationale, scope, budget if any).  
-2. **Discuss** in the DAO forum/Discord for feedback.  
-3. **Submit** on Snapshot under **iobdao.eth** with clear options and timelines.  
-4. **Vote** — proposals remain open per the configured voting window.  
-5. **Execute** — post-vote actions are executed via the DAO multisig and then verified publicly.
+| DAO Branch | Network | Function |
+|-------------|----------|----------|
+| **Main DAO** | Ethereum | Core Governance |
+| **Treasury DAO** | Base | Fund Management |
+| **Creator DAO** | Polygon | Artist & Community Proposals |
+| **Expansion DAOs** | BNB / Arbitrum | DeFi and Ecosystem Growth |
 
----
-
-## 📘 DAO Snapshot Governance Activation
-
-The **DAO Snapshot Governance Activation Report** outlines how IO Beats DAO initiated its  
-governance infrastructure across **Ethereum, Base, Polygon, BNB Chain, and Arbitrum**.  
-
-It includes:
-- Governance parameters (quorum, proposal threshold, voting delay)  
-- DAO structure and ENS portfolio  
-- Multi-chain Snapshot setup  
-- Official links (GitHub, Dune, Snapshot)  
-- Legal disclaimer
-
-📄 **Read the full report:**  
-[`DAO_Snapshot_Governance_Activation_IOB_Vote.pdf`](./DAO_Snapshot_Governance_Activation_IOB_Vote.pdf)
+> All branches follow the **4-of-7 multisig model** with transparent Dune dashboards and Cyberscope audits.
 
 ---
 
-## ⚙️ Automation Details
+## ⚙️ Governance Parameters
 
-This governance tracker is powered by:
-- **GitHub Actions** → Fetches proposals every 6h from Snapshot GraphQL API  
-- **Dune Dashboards** → Monitors treasury inflows/outflows  
-- **Docs Auto-Updates** → JSON reports are stored in `/data/snapshot/`
+- Quorum: **25M IOB**  
+- Proposal Threshold: **2.5M IOB**  
+- Voting Delay: **1 hour**  
+- Voting Period: **48 hours**  
+- Approval Ratio: **51% FOR**  
+- Vote Cap: **3M IOB per wallet**  
+- Voter Incentive: **0.5% DAO Rewards**
 
-🧩 **Workflow:**  
+---
+
+## ⚙️ Automation Flow
+
 ```mermaid
 flowchart LR
-  A[Snapshot Proposals API] -->|GraphQL Query| B[GitHub Actions Workflow]
-  B -->|Store JSON| C[data/snapshot/latest.json]
-  C -->|Feeds| D[docs/governance/README.md]
-  D -->|Displayed| E[GitHub Pages / Treasury Portal]
+  A[Snapshot API] --> B[GitHub Actions Workflow]
+  B --> C[data/snapshot/latest.json]
+  C --> D[docs/governance/README.md]
+  D --> E[GitHub Pages / Treasury Portal]
