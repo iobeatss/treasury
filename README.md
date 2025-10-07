@@ -50,12 +50,12 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 
 ---
 
-### 💰 Tokenomics & Investor Reports
+## 💰 Tokenomics & Investor Reports
 
 [![PDF Download](https://img.shields.io/badge/Download-Tokenomics_v1.02-orange?logo=adobeacrobatreader)](./docs/tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf)
 
-The **IO Beats Tokenomics v1.02 (Investor Edition)** provides a full breakdown of  
-the $IOB allocation, vesting model, DAO treasury distribution, and governance logic.
+The **IO Beats Tokenomics v1.02 (Investor Edition)** provides a complete breakdown of  
+the $IOB allocation, vesting model, DAO treasury distribution, and multichain logic.
 
 | Category | Allocation | Vesting / Lock | Notes |
 |-----------|-------------|----------------|-------|
@@ -63,72 +63,42 @@ the $IOB allocation, vesting model, DAO treasury distribution, and governance lo
 | **Community Reserve** | 25% (12.5B IOB) | DAO unlock max 5%/year | Growth, airdrops, quests |
 | **Staking Rewards** | 15% (7.5B IOB) | 48M vesting | Long-term holder rewards |
 | **Liquidity** | 15% (7.5B IOB) | LP lock 12–24M | Pools via Uniswap, Pancake, Aerodrome |
-| **Teams & Contributors** | 10% (5B IOB) | 6M cliff · 36M vesting | Core team & ops |
+| **Teams & Contributors** | 10% (5B IOB) | 6M cliff · 36M vesting | Core team & operations |
 | **Founders** | 5% (2.5B IOB) | 12M cliff · 48M vesting | Long-term commitment |
 | **Treasury / Partnerships** | 10% (5B IOB) | Lock 24M | Strategic funds & listings |
 
-> 📄 **Full report:** [`IOB_Tokenomics_v1.02_InvestorEdition.pdf`](./docs/tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf)  
+> 📄 **Full Report:** [`IOB_Tokenomics_v1.02_InvestorEdition.pdf`](./docs/tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf)  
 > **Audit:** [Cyberscope](https://www.cyberscope.io/audits/iob) · **Transparency Dashboard:** [Dune](https://dune.com/iobeats_dao)
 
 ---
 
-### 🌉 Per-Chain “IOB_Treasury_Transparency” Packs
+### 🌐 Token Distribution (Multi-Chain Overview)
 
-- **Global DAO Analytics Report v1.0** → [`PDF`](./docs/transparency/IOB_DAO_Analytics_Transparency_Report_v1.0.pdf)  
-- **Safe Multichain Transparency Report v1.0** → [`PDF`](./docs/transparency/IOB_Safe_Multichain_Transparency_Report_v1.0.pdf)  
-- **IOB Dune Transparency Automation v1.3** → [`PDF`](./docs/transparency/IOB_Dune_Transparency_Automation_v1.3.pdf)  
-- **Ethereum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_ETH_v1.0.pdf)  
-- **BNB Chain** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_BNB_v1.0.pdf)  
-- **Base** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Base_v1.0.pdf)  
-- **Polygon** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Polygon_v1.0.pdf)  
-- **Arbitrum** → [`PDF`](./docs/transparency/IOB_Treasury_Transparency_Arbitrum_v1.0.pdf)
+Each network hosts **10 B $IOB tokens**, forming a total supply of **50 B IOB** distributed equally across all chains.
 
----
+| Blockchain | Allocation | Explorer | Status |
+|-------------|-------------|-----------|---------|
+| **Ethereum** | 10 B IOB | [Etherscan](https://etherscan.io/token/0xDaD68778f0a0732E232f27dc296e3602E12d108A) | ✅ Active |
+| **BNB Chain** | 10 B IOB | [BscScan](https://bscscan.com/token/0x13ed5aC0a6AbE5bbB1881d75ad05Fe9e22478238) | ✅ Active |
+| **Base** | 10 B IOB | [BaseScan](https://basescan.org/token/0x80a23f168831d6e1f0a1353dbf3a75cae16cb709) | ✅ Active |
+| **Polygon** | 10 B IOB | [PolygonScan](https://polygonscan.com/token/0xee09fc58439f3bd514dd5cfb3b3e383e4788ecca) | ✅ Active |
+| **Arbitrum** | 10 B IOB | [Arbiscan](https://arbiscan.io/token/0x461db9ac7eca7955a1f87e300dde8b32cc0eaac0) | ✅ Active |
 
-## 📊 DAO Governance & Transparency
-
-### 🗳️ Snapshot DAO — Governance Voting
-- **Live space:** [iobdao.eth](https://snapshot.box/#/s:iobdao.eth)  
-- **Purpose:** DAO voting for proposals, treasury management & roadmap approvals  
-- **Genesis Proposal:** [#001 The Birth of IO Beats DAO](https://snapshot.box/#/s:iobdao.eth/proposal/0x4e0ec421ed5cf0d6b6d07ef97727f15f61b0881bf20df0fdeab14caa868a663c)  
-- **Participation:** Open to all $IOB holders  
-
-### 📈 Dune Analytics — Real-Time Transparency
-- **Live dashboard:** [https://dune.com/iobeats_dao](https://dune.com/iobeats_dao)  
-- **Aggregates:** inflows/outflows, balances, multisig transactions, vesting data  
-- **Chains monitored:** Ethereum, Base, Polygon, BNB Chain, Arbitrum  
-- **Update frequency:** Every 2–3 hours  
-
-> 🔍 **KPIs:** Total USD value, Net Flow (7D/30D), Transactions per chain,  
-> Allocation per Safe, and Vesting Tracking (Sablier-based, coming soon)
+> 🪙 **Total Supply:** 50,000,000,000 IOB  
+> 🔗 **5 Chains:** Ethereum · BNB Chain · Base · Polygon · Arbitrum  
+> 🧠 **Audited by:** Cyberscope — Multichain transparency validated  
 
 ---
 
-### 🔒 On-chain Proofs (Safes — 4/7 Multisig)
+### 📊 Token Allocation Chart
 
-| Chain     | Safe Address | Explorer |
-|-----------|--------------|----------|
-| Ethereum  | `0xA2952C5F625e59E21012FB92A8D8269Fdb324554` | [Etherscan](https://etherscan.io/address/0xA2952C5F625e59E21012FB92A8D8269Fdb324554) |
-| BNB Chain | `0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06` | [BscScan](https://bscscan.com/address/0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06) |
-| Base      | `0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6` | [BaseScan](https://basescan.org/address/0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6) |
-| Polygon   | `0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B` | [PolygonScan](https://polygonscan.com/address/0xdce35f5f9ab98c6dd671b15fb23602f67e296c0b) |
-| Arbitrum  | `0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C` | [Arbiscan](https://arbiscan.io/address/0x4B78FB95f7c2e0122356a73D8AAEB5AaF220d38C) |
-
-> **Transparency:** All presale funds and token allocations are visible on-chain.  
-> Vesting executed via **Sablier**; LP tokens locked with public proofs.
-
----
-
-## 🌐 Related Links
-- **Website:** https://iobeats.com  
-- **Music Player:** https://open.iobeats.com  
-- **Snapshot DAO:** https://snapshot.box/#/s:iobdao.eth  
-- **Dune Analytics:** https://dune.com/iobeats_dao  
-- **Discord:** https://discord.com/invite/rQSCaxPNs5  
-- **Telegram:** https://t.me/iobeatscommunity  
-- **Reddit:** https://www.reddit.com/r/io_beats/  
-- **Whitepaper:** https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-white-paper.pdf  
-- **Pitch Deck:** https://github.com/iobeatss/iobeats-docs/blob/main/iobeats-pitch-deck.pdf  
-
-⚠️ **Note:** Vault addresses are placeholders until locks are executed on-chain.  
-_If present, see the full_ **[Legal Disclaimer](./DISCLAIMER.md)**.
+```mermaid
+pie showData
+    title Token Allocation (Total Supply 50B IOB)
+    "Community Reserve (25%)" : 12.5
+    "Presale (20%)" : 10
+    "Staking Rewards (15%)" : 7.5
+    "Liquidity (15%)" : 7.5
+    "Team & Contributors (10%)" : 5
+    "Founders (5%)" : 2.5
+    "Treasury & Partnerships (10%)" : 5
