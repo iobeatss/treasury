@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/hero1.gif"
+  <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/hero1.gif?raw=true"
        alt="IO Beats Treasury Banner" width="100%" />
 </p>
 
@@ -10,7 +10,8 @@
   [iobeats-player](https://github.com/iobeatss/iobeats-player) ·
   [BeatsApe](https://github.com/iobeatss/BeatsApe) ·
   [iobeats-docs](https://github.com/iobeatss/iobeats-docs) ·
-  [iobeats-logo-assets](https://github.com/iobeatss/iobeats-logo-assets)  
+  [iobeats-logo-assets](https://github.com/iobeatss/iobeats-logo-assets) ·
+  [Governance Hub](https://governance.iobeats.com/)
 
 ---
 
@@ -21,6 +22,7 @@
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-blue.svg?logo=solidity)](https://docs.soliditylang.org/en/v0.8.24/)
 [![Deployment](https://img.shields.io/badge/Deployed-MultiChain-purple.svg)](https://github.com/iobeatss/IOB-Smart-contract#deployment)
 [![Docs](https://img.shields.io/badge/Docs-Available-brightgreen.svg)](https://github.com/iobeatss/iobeats-docs)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Snapshot](https://img.shields.io/badge/Vote%20Now-Snapshot-blueviolet?logo=snapshot&logoColor=white)](https://snapshot.box/#/s:iobdao.eth)
 [![Dune Dashboard](https://img.shields.io/badge/Analytics-Dune-orange?logo=dune&logoColor=white)](https://dune.com/iobeats_dao)
 [![PDF Download](https://img.shields.io/badge/Download-Dune_Automation_v1.0-orange?logo=adobeacrobatreader)](./docs/transparency/IOB_Dune_Transparency_Automation_v1.0.pdf)
@@ -46,6 +48,7 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Sablier Test Report v1.0** → [`PDF`](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
 - **Payroll Infrastructure v1.0** → [`PDF`](./docs/IOB_Payroll_Infrastructure_v1.0.pdf)  
 - **IOB Academy Preview v1.0** → [`PDF`](./docs/IOB_Academy_Preview_v1.0.pdf)  
+- **DAO Governance Framework v1.0 (Premium Edition)** → [`PDF`](./docs/governance/IOB_DAO_Governance_Framework_v1.0_PremiumEdition.pdf)  
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
 
 ---
@@ -67,6 +70,7 @@ the $IOB allocation, vesting model, DAO treasury distribution, and multichain lo
 | **Founders** | 5% (2.5B IOB) | 12M cliff · 48M vesting | Long-term commitment |
 | **Treasury / Partnerships** | 10% (5B IOB) | Lock 24M | Strategic funds & listings |
 
+> 🧩 Token supply and vesting schedules are synchronized across all EVM-compatible chains.  
 > 📄 **Full Report:** [`IOB_Tokenomics_v1.02_InvestorEdition.pdf`](./docs/tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf)  
 > **Audit:** [Cyberscope](https://www.cyberscope.io/audits/iob) · **Transparency Dashboard:** [Dune](https://dune.com/iobeats_dao)
 
@@ -93,6 +97,7 @@ Each network hosts **10 B $IOB tokens**, forming a total supply of **50 B IOB** 
 ### 📊 Token Allocation Chart
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 pie showData
     title Token Allocation (Total Supply 50B IOB)
     "Community Reserve (25%)" : 12.5
