@@ -10,8 +10,7 @@
   [iobeats-player](https://github.com/iobeatss/iobeats-player) ·
   [BeatsApe](https://github.com/iobeatss/BeatsApe) ·
   [iobeats-docs](https://github.com/iobeatss/iobeats-docs) ·
-  [iobeats-logo-assets](https://github.com/iobeatss/iobeats-logo-assets) ·
-  [Governance Hub](https://governance.iobeats.com/)
+  [iobeats-logo-assets](https://github.com/iobeatss/iobeats-logo-assets) 
 
 ---
 
