@@ -5,6 +5,11 @@
 
 # 📊 IOB_Dune_Transparency_Automation_v1.0  
 *Automated Multichain Safe Analytics & Treasury Sync*
+[![Ethereum Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-ethereum.yml/badge.svg)](../../.github/workflows/dune-ethereum.yml)
+[![BNB Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-bnb.yml/badge.svg)](../../.github/workflows/dune-bnb.yml)
+[![Base Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-base.yml/badge.svg)](../../.github/workflows/dune-base.yml)
+[![Polygon Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-polygon.yml/badge.svg)](../../.github/workflows/dune-polygon.yml)
+[![Arbitrum Sync](https://github.com/iobeatss/treasury/actions/workflows/dune-arbitrum.yml/badge.svg)](../../.github/workflows/dune-arbitrum.yml)
 
 ---
 
