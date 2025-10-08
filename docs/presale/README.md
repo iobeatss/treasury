@@ -74,6 +74,38 @@ All presale documents are **audited, timestamped, and stored on GitHub** for ful
 
 ---
 
+## 📊 Presale Allocation Table (Investor Edition)
+
+The **IO Beats DAO Presale Allocation Table v1.0** provides a verified breakdown  
+of token distribution, soft/hard caps, and per-chain Safe addresses.
+
+📄 [**Download iO_Beats_Presale_Allocation_Table_v1_0.pdf**](https://github.com/iobeatss/treasury/blob/main/docs/presale/iO_Beats_Presale_Allocation_Table_v1_0.pdf)
+
+| Network | Allocation (IOB) | Soft Cap (USD) | Hard Cap (USD) | Safe Address |
+|----------|------------------|----------------|----------------|---------------|
+| **Base** | 2,000,000,000 | 250,000 | 1,000,000 | `0xc5086e22…` |
+| **Ethereum** | 2,000,000,000 | 250,000 | 1,000,000 | `0xA2952C5F…` |
+| **BNB Chain** | 2,000,000,000 | 250,000 | 1,000,000 | `0xF460231A…` |
+| **Polygon** | 2,000,000,000 | 250,000 | 1,000,000 | `0xDce35f5F…` |
+| **Arbitrum** | 2,000,000,000 | 250,000 | 1,000,000 | `0x4B78FB95…` |
+
+> **Global Total:** 10,000,000,000 IOB (20% of supply)  
+> **Soft Cap:** 1,250,000 USD | **Hard Cap:** 5,000,000 USD  
+> **Audit:** Cyberscope (October 2025) | **Vesting:** 10% TGE + 2 mo cliff + 18 mo linear:contentReference[oaicite:0]{index=0}
+
+---
+
+<p align="center">
+  <a href="https://github.com/iobeatss/treasury/blob/main/docs/presale/iO_Beats_Presale_Allocation_Table_v1_0.pdf" target="_blank">
+    <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/pdf_button.png"
+         alt="Download Presale Allocation Table PDF"
+         width="260"
+         style="border-radius:12px;box-shadow:0 0 10px rgba(255,102,0,0.4);margin-top:10px;" />
+  </a>
+</p>
+
+---
+
 ## 🧾 Proof of Transparency
 
 All presale operations are secured through IO Beats DAO Safes.  
