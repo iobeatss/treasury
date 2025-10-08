@@ -24,11 +24,11 @@ It aligns **artists, fans, investors, and builders** through fair token distribu
 
 | Chain | Supply | Contract | Explorer |
 |--------|--------|-----------|-----------|
-| **Ethereum** | 10,000,000,000 IOB | `0xDaD68778f0a0732E232f27dc296e3602E12d108A` | [Etherscan](https://etherscan.io/token/0xc2af820610e055264f928388b85cdede6a21d710) |
-| **BNB Chain** | 10,000,000,000 IOB | `0x13ed5aC0a6AbE5bbB1881d75ad05Fe9e22478238` | [BscScan](https://bscscan.com/token/0x0366bb765b8e7180f8e0f6c33b93fdcaa0a4d447) |
-| **Base** | 10,000,000,000 IOB | `0x80a23f168831d6e1f0a1353dbf3a75cae16cb709` | [BaseScan](https://basescan.org/token/0x27df736a873a5bc0ce056e52459d61ed1720da86) |
-| **Polygon** | 10,000,000,000 IOB | `0xee09fc58439f3bd514dd5cfb3b3e383e4788ecca` | [PolygonScan](https://polygonscan.com/token/0xfd9d9dad90a925630ffbd7ee7b2b57581269c63b) |
-| **Arbitrum** | 10,000,000,000 IOB | `0x461db9ac7eca7955a1f87e300dde8b32cc0eaac0` | [Arbiscan](https://arbiscan.io/token/0xc720d3a15e97347ec501fd3011613c5b9337134d) |
+| **Ethereum** | 10,000,000,000 IOB | `0xc2af820610e055264f928388b85cdede6a21d710` | [Etherscan](https://etherscan.io/token/0xc2af820610e055264f928388b85cdede6a21d710) |
+| **BNB Chain** | 10,000,000,000 IOB | `0x0366bb765b8e7180f8e0f6c33b93fdcaa0a4d447` | [BscScan](https://bscscan.com/token/0x0366bb765b8e7180f8e0f6c33b93fdcaa0a4d447) |
+| **Base** | 10,000,000,000 IOB | `0x27df736a873a5bc0ce056e52459d61ed1720da86` | [BaseScan](https://basescan.org/token/0x27df736a873a5bc0ce056e52459d61ed1720da86) |
+| **Polygon** | 10,000,000,000 IOB | `0xfd9d9dad90a925630ffbd7ee7b2b57581269c63b` | [PolygonScan](https://polygonscan.com/token/0xfd9d9dad90a925630ffbd7ee7b2b57581269c63b) |
+| **Arbitrum** | 10,000,000,000 IOB | `0xc720d3a15e97347ec501fd3011613c5b9337134d` | [Arbiscan](https://arbiscan.io/token/0xc720d3a15e97347ec501fd3011613c5b9337134d) |
 
 > 🧩 **Total Supply:** 50,000,000,000 IOB  
 > 🔗 All contracts audited by Cyberscope and synced via DAO governance.
