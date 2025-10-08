@@ -3,22 +3,24 @@
        alt="IO Beats Presale Banner" width="100%" />
 </p>
 
-# 🪙 IO Beats DAO — Presale Transparency (Premium Orange Edition)
+# 🪙 IO Beats DAO — Presale Transparency (Premium Orange Edition v1.1)
 
 [![Dune](https://img.shields.io/badge/Analytics-Dune-orange?logo=dune&logoColor=white)](https://dune.com/iobeats_dao)
 [![DAO](https://img.shields.io/badge/DAO-Governance-purple?logo=snapshot&logoColor=white)](https://snapshot.box/#/s:iobdao.eth)
+[![Safe](https://img.shields.io/badge/Safe-Multisig-blue?logo=gnosis&logoColor=white)](https://app.safe.global/home?safe=eth:0x...)
 [![Docs](https://img.shields.io/badge/Docs-GitHub-green?logo=github)](https://github.com/iobeatss/treasury/tree/main/docs/presale)
 [![Audit](https://img.shields.io/badge/Audit-Cyberscope-brightgreen.svg)](https://www.cyberscope.io/audits/iob)
-[![PDF Pack](https://img.shields.io/badge/Download-Presale_Pack-orange?logo=adobeacrobatreader)](./IOB_ETH_Presale_Preview_v1.0_Premium_Orange.pdf)
+[![PDF Pack](https://img.shields.io/badge/Download-Presale_Pack-orange?logo=adobeacrobatreader)](./IOB_Presale_Global_Overview_v1.0.pdf)
 
 ---
 
 ## 🌍 Overview
 
-This section gathers all **official IO Beats Presale Reports (v1.0 — Premium Orange Edition)**  
-covering allocations, chain-specific fundraising summaries, and liquidity plans.  
+This directory contains all **official IO Beats DAO Presale Transparency Reports (v1.1 — Premium Orange Edition)**.  
+Each report covers per-chain fundraising, liquidity allocations, and DAO governance proofs.
 
-Each report is chain-verified, signed, and timestamped for **on-chain proof of integrity**.
+All presale documents are **audited, timestamped, and stored on GitHub** for full immutability under the  
+**IO Beats DAO Transparency Program (v1.0)**.
 
 ---
 
@@ -32,12 +34,12 @@ Each report is chain-verified, signed, and timestamped for **on-chain proof of i
 | **Polygon** | Presale Preview (Premium Orange) | v1.0 | [📄 PDF](./IOB_Polygon_Presale_Preview_v1.0_Premium_Orange.pdf) |
 | **Arbitrum** | Presale Preview (Premium Orange) | v1.0 | [📄 PDF](./IOB_Arbitrum_Presale_Preview_v1.0_Premium_Orange.pdf) |
 
-> 🪙 **Each report includes:**  
-> - Fundraising structure (Soft/Hard Cap)  
-> - Token allocation and vesting breakdown  
-> - Initial liquidity plan and DEX pairing  
+> 🧾 **Each report includes:**  
+> - Fundraising structure (Soft / Hard Cap)  
+> - Token allocation & vesting logic  
+> - Initial liquidity & DEX pairing plan  
 > - Audit & compliance summary  
-> - DAO references (Safe & Snapshot)
+> - DAO references (Safe multisig + Snapshot proposals)
 
 ---
 
@@ -56,10 +58,44 @@ Each report is chain-verified, signed, and timestamped for **on-chain proof of i
 
 ---
 
+## 💰 Allocation & Vesting Summary
+
+| Category | Allocation | Unlock Type | Vesting |
+|-----------|-------------|--------------|----------|
+| **Presale** | 20% (10B IOB) | 10% TGE | 18 months |
+| **Community Reserve** | 25% (12.5B IOB) | DAO unlock | Max 5% / year |
+| **Liquidity** | 15% (7.5B IOB) | Locked | 12–24 months |
+| **Staking Rewards** | 15% (7.5B IOB) | Linear | 48 months |
+| **Team & Contributors** | 10% (5B IOB) | Cliff 6M | 36 months |
+| **Founders** | 5% (2.5B IOB) | Cliff 12M | 48 months |
+| **Treasury / Partnerships** | 10% (5B IOB) | Locked | 24 months |
+
+> 📊 Each allocation is **on-chain locked and verifiable** via DAO multisigs across 5 EVM chains.
+
+---
+
+## 🧾 Proof of Transparency
+
+All presale operations are secured through IO Beats DAO Safes.  
+Transactions and fund movements are **visible in real time** via Dune Analytics.
+
+| Chain | Safe Address | Explorer |
+|--------|---------------|-----------|
+| **Ethereum** | `0x...` | [Etherscan](https://etherscan.io/address/0x...) |
+| **BNB Chain** | `0x...` | [BscScan](https://bscscan.com/address/0x...) |
+| **Base** | `0x...` | [BaseScan](https://basescan.org/address/0x...) |
+| **Polygon** | `0x...` | [PolygonScan](https://polygonscan.com/address/0x...) |
+| **Arbitrum** | `0x...` | [Arbiscan](https://arbiscan.io/address/0x...) |
+
+> 🔒 All funds are controlled by **4/7 DAO multisigs** and monitored via Dune dashboards.
+
+---
+
 ## 🔗 Related Documents
 
 | Category | Document | Link |
 |-----------|-----------|------|
+| **Global Overview** | Presale Global Report v1.0 | [📄 PDF](./IOB_Presale_Global_Overview_v1.0.pdf) |
 | **Tokenomics** | Investor Edition v1.02 | [📄 PDF](../tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf) |
 | **Transparency** | Multichain Reports (ETH, BNB, Base, Polygon, Arbitrum) | [📁 Directory](../transparency) |
 | **Governance** | DAO Constitution & Framework | [📁 Directory](../governance) |
@@ -68,9 +104,10 @@ Each report is chain-verified, signed, and timestamped for **on-chain proof of i
 
 ## 🧠 Notes
 
-- All documents are released under **IO Beats DAO Transparency Program (v1.0)**.  
-- Each file is immutable and version-controlled via GitHub commits.  
-- Premium Orange designates officially validated and presentation-ready versions.
+- All documents belong to the **IO Beats DAO Transparency Program (v1.0)**.  
+- Files are **immutable** and version-controlled via GitHub commits.  
+- “Premium Orange Edition” refers to **official validated public versions**.  
+- Updates (v1.2) will integrate **Sablier vesting flow** & **NFT reward strategies**.
 
 ---
 
@@ -82,4 +119,3 @@ flowchart LR
   B --> C["Cyberscope Audit Validation"]
   C --> D["PDF Publishing on GitHub"]
   D --> E["Dune Analytics Sync"]
-
