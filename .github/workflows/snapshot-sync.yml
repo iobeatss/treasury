@@ -1,26 +1,83 @@
-name: Snapshot DAO Sync
+name: 🧩 Snapshot DAO Sync
+
 on:
   schedule:
-    - cron: "0 */6 * * *"  # toutes les 6 heures
+    - cron: "0 */6 * * *" # Exécution toutes les 6 heures
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Fetch latest Snapshot proposals
-        run: |
-          mkdir -p data/snapshot
-          curl -s "https://hub.snapshot.org/graphql" \
-            -H "Content-Type: application/json" \
-            -d '{"query":"{ proposals(first:5, where:{space_in:[\"iobdao.eth\"]}, orderBy:\"created\", orderDirection:desc){id title body state start end author}}"}' \
-            | jq '.' > data/snapshot/latest.json
 
-      - name: Commit updates
+    steps:
+      - name: 🧩 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: ⚙️ Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📥 Install dependencies
+        run: |
+          npm install axios fs path
+
+      - name: 🔄 Fetch latest Snapshot proposals
+        run: |
+          echo "Fetching latest Snapshot proposals..."
+          mkdir -p data/snapshot
+          node <<'EOF'
+          const fs = require('fs');
+          const axios = require('axios');
+          const path = require('path');
+
+          const SNAPSHOT_SPACE = 'iobdao.eth';
+          const SNAPSHOT_API = `https://hub.snapshot.org/graphql`;
+          const OUT_FILE = path.join('data', 'snapshot', 'latest.json');
+
+          const query = `
+            query Proposals {
+              proposals(first: 20, where: { space_in: ["${SNAPSHOT_SPACE}"] }, orderBy: "created", orderDirection: desc) {
+                id
+                title
+                body
+                choices
+                start
+                end
+                state
+                author
+              }
+            }
+          `;
+
+          (async () => {
+            try {
+              const res = await axios.post(SNAPSHOT_API, { query });
+              fs.writeFileSync(OUT_FILE, JSON.stringify(res.data.data.proposals, null, 2));
+              console.log("✅ Snapshot proposals saved to", OUT_FILE);
+            } catch (err) {
+              console.error("❌ Error fetching Snapshot data:", err.message);
+              process.exit(1);
+            }
+          })();
+          EOF
+
+      - name: 🧾 Commit updates (only if changes)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/snapshot/latest.json
-          git commit -m "chore(snapshot): sync latest proposals"
-          git push
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add .
+            git commit -m "Sync Snapshot proposals [skip ci]"
+            git push origin main
+            echo "✅ Changes committed & pushed."
+          else
+            echo "✅ Nothing to commit, repo already up to date."
+          fi
+
