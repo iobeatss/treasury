@@ -107,7 +107,4 @@ pie showData
     "Founders (5%)" : 2.5
     "Treasury & Partnerships (10%)" : 5
 
----
 
-**© 2025 IO Beats DAO — All Rights Reserved**  
-*Empowering Artists. Rewarding Fans. Building the Future of Web3 Music.*
