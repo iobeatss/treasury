@@ -102,6 +102,34 @@ Transactions and fund movements are **visible in real time** via Dune Analytics.
 
 ---
 
+## 🧾 Presale Proofs (Investor Edition)
+
+Official verification document of the **IO Beats DAO Presale**  
+including on-chain allocations, Safe addresses, Cyberscope audit, and NFT proof structure.
+
+📄 [Download IOB_Presale_Proofs_v1.0.pdf](https://github.com/iobeatss/treasury/blob/main/docs/presale/IOB_Presale_Proofs_v1.0.pdf)
+
+> **Highlights:**
+> - **Total Presale Allocation:** 10 B IOB (20 % of total supply)  
+> - **Per-Chain Allocation:** 2 B IOB (Base · ETH · BNB · Polygon · Arbitrum)  
+> - **Audit:** Cyberscope — March 2025  
+> - **Vesting:** 10 % TGE + 2 mo cliff + 18 mo linear via Sablier  
+> - **Governance:** Multi-chain Snapshot + Safe Treasuries (on Dune)  
+> - **NFT Proof Structure:** Common · Rare · Legendary · Genesis tiers with yield & governance utilities:contentReference[oaicite:1]{index=1}  
+> - **Legal & DAO Disclosures:** Participation risks, on-chain verification, and Safe custody statements:contentReference[oaicite:2]{index=2}
+
+---
+
+<p align="center">
+  <a href="https://github.com/iobeatss/treasury/blob/main/docs/presale/IOB_Presale_Proofs_v1.0.pdf">
+    <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/pdf_button.png"
+         alt="Download Presale Proofs PDF" width="240"/>
+  </a>
+</p>
+
+
+---
+
 ## 🧠 Notes
 
 - All documents belong to the **IO Beats DAO Transparency Program (v1.0)**.  
