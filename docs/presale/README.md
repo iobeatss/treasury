@@ -50,7 +50,7 @@ All presale documents are **audited, timestamped, and stored on GitHub** for ful
 | **Total Supply** | 50,000,000,000 IOB |
 | **Presale Allocation** | 10,000,000,000 IOB (20%) |
 | **Chains** | Ethereum · BNB · Base · Polygon · Arbitrum |
-| **Presale Duration** | ~2 weeks per chain |
+| **Presale Duration** | ~1 weeks per chain |
 | **Launch Period** | Q4 2025 |
 | **Audit** | [Cyberscope](https://www.cyberscope.io/audits/iob) |
 | **Governance** | [Snapshot](https://snapshot.box/#/s:iobdao.eth) |
