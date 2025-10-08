@@ -10,17 +10,7 @@ This roadmap tracks every milestone with **on-chain proofs**, **public reports**
 ## 🛠️ Visual Timeline
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {
-  'primaryColor': '#FF9012',
-  'primaryTextColor': '#111111',
-  'primaryBorderColor': '#FF9012',
-  'lineColor': '#4B5563',
-  'secondaryColor': '#FFF3E0',
-  'tertiaryColor': '#FFFFFF',
-  'noteBkgColor': '#F9FAFB',
-  'noteTextColor': '#111827',
-  'fontFamily': 'Inter, Arial, sans-serif'
-}}}%%
+%%{init: {'theme': 'neutral'}}%%
 timeline
     title IO Beats Treasury Roadmap (2025 → 2026)
 
