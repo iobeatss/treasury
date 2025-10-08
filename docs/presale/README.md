@@ -120,18 +120,6 @@ including on-chain allocations, Safe addresses, Cyberscope audit, and NFT proof 
 
 ---
 
-<p align="center">
-  <a href="https://github.com/iobeatss/treasury/blob/main/docs/presale/IOB_Presale_Proofs_v1.0.pdf" target="_blank">
-    <img src="https://raw.githubusercontent.com/iobeatss/iobeats-logo-assets/main/pdf_button.png"
-         alt="Download IOB Presale Proofs PDF"
-         width="260"
-         style="border-radius: 12px; box-shadow: 0 0 10px rgba(255,102,0,0.4); margin-top: 10px;" />
-  </a>
-</p>
-
-
----
-
 ## 🧠 Notes
 
 - All documents belong to the **IO Beats DAO Transparency Program (v1.0)**.  
