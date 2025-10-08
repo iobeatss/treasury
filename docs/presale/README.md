@@ -50,7 +50,7 @@ All presale documents are **audited, timestamped, and stored on GitHub** for ful
 | **Total Supply** | 50,000,000,000 IOB |
 | **Presale Allocation** | 10,000,000,000 IOB (20%) |
 | **Chains** | Ethereum · BNB · Base · Polygon · Arbitrum |
-| **Presale Duration** | ~1 weeks per chain |
+| **Presale Duration** | ~1 week per chain |
 | **Launch Period** | Q4 2025 |
 | **Audit** | [Cyberscope](https://www.cyberscope.io/audits/iob) |
 | **Governance** | [Snapshot](https://snapshot.box/#/s:iobdao.eth) |
@@ -104,19 +104,19 @@ Transactions and fund movements are **visible in real time** via Dune Analytics.
 
 ## 🧾 Presale Proofs (Investor Edition)
 
-Official verification document of the **IO Beats DAO Presale**  
+Official verification document of the **IO Beats DAO Presale**,  
 including on-chain allocations, Safe addresses, Cyberscope audit, and NFT proof structure.
 
-📄 [Download IOB_Presale_Proofs_v1.0.pdf](https://github.com/iobeatss/treasury/blob/main/docs/presale/IOB_Presale_Proofs_v1.0.pdf)
+📄 [**Download IOB_Presale_Proofs_v1.0.pdf**](https://github.com/iobeatss/treasury/blob/main/docs/presale/IOB_Presale_Proofs_v1.0.pdf)
 
-> **Highlights:**
+> **Highlights:**  
 > - **Total Presale Allocation:** 10 B IOB (20 % of total supply)  
 > - **Per-Chain Allocation:** 2 B IOB (Base · ETH · BNB · Polygon · Arbitrum)  
 > - **Audit:** Cyberscope — March 2025  
 > - **Vesting:** 10 % TGE + 2 mo cliff + 18 mo linear via Sablier  
 > - **Governance:** Multi-chain Snapshot + Safe Treasuries (on Dune)  
-> - **NFT Proof Structure:** Common · Rare · Legendary · Genesis tiers with yield & governance utilities:contentReference[oaicite:1]{index=1}  
-> - **Legal & DAO Disclosures:** Participation risks, on-chain verification, and Safe custody statements:contentReference[oaicite:2]{index=2}
+> - **NFT Proof Structure:** Common · Rare · Legendary · Genesis tiers with yield & governance utilities  
+> - **Legal & DAO Disclosures:** Participation risks, on-chain verification, and Safe custody statements
 
 ---
 
@@ -126,7 +126,6 @@ including on-chain allocations, Safe addresses, Cyberscope audit, and NFT proof 
          alt="Download Presale Proofs PDF" width="240"/>
   </a>
 </p>
-
 
 ---
 
