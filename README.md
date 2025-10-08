@@ -81,11 +81,11 @@ Each network hosts **10 B $IOB tokens**, forming a total supply of **50 B IOB** 
 
 | Blockchain | Allocation | Explorer | Status |
 |-------------|-------------|-----------|---------|
-| **Ethereum** | 10 B IOB | [Etherscan](https://etherscan.io/token/0xDaD68778f0a0732E232f27dc296e3602E12d108A) | ✅ Active |
-| **BNB Chain** | 10 B IOB | [BscScan](https://bscscan.com/token/0x13ed5aC0a6AbE5bbB1881d75ad05Fe9e22478238) | ✅ Active |
-| **Base** | 10 B IOB | [BaseScan](https://basescan.org/token/0x80a23f168831d6e1f0a1353dbf3a75cae16cb709) | ✅ Active |
-| **Polygon** | 10 B IOB | [PolygonScan](https://polygonscan.com/token/0xee09fc58439f3bd514dd5cfb3b3e383e4788ecca) | ✅ Active |
-| **Arbitrum** | 10 B IOB | [Arbiscan](https://arbiscan.io/token/0x461db9ac7eca7955a1f87e300dde8b32cc0eaac0) | ✅ Active |
+| **Ethereum** | 10 B IOB | [Etherscan](https://etherscan.io/token/0xc2af820610e055264f928388b85cdede6a21d710) | ✅ Active |
+| **BNB Chain** | 10 B IOB | [BscScan](https://bscscan.com/token/0x0366bb765b8e7180f8e0f6c33b93fdcaa0a4d447) | ✅ Active |
+| **Base** | 10 B IOB | [BaseScan](https://basescan.org/token/0x27df736a873a5bc0ce056e52459d61ed1720da86) | ✅ Active |
+| **Polygon** | 10 B IOB | [PolygonScan](https://polygonscan.com/token/0xfd9d9dad90a925630ffbd7ee7b2b57581269c63b) | ✅ Active |
+| **Arbitrum** | 10 B IOB | [Arbiscan](https://arbiscan.io/token/0xc720d3a15e97347ec501fd3011613c5b9337134d) | ✅ Active |
 
 > 🪙 **Total Supply:** 50,000,000,000 IOB  
 > 🔗 **5 Chains:** Ethereum · BNB Chain · Base · Polygon · Arbitrum  
