@@ -10,7 +10,7 @@
   [iobeats-player](https://github.com/iobeatss/iobeats-player) ·
   [BeatsApe](https://github.com/iobeatss/BeatsApe) ·
   [iobeats-docs](https://github.com/iobeatss/iobeats-docs) ·
-  [iobeats-logo-assets](https://github.com/iobeatss/iobeats-logo-assets) 
+  [iobeats-logo-assets](https://github.com/iobeatss/iobeats-logo-assets)
 
 ---
 
@@ -34,7 +34,34 @@
 This repository contains all official documents related to **iO Beats Treasury governance, safes, locks, vesting schedules, and transparency reports**.  
 It is designed for **investors, exchanges (CEX), and the community** to ensure **maximum transparency**.
 
-> **Update (v1.3):** Added **Global DAO Analytics Report** & **Safe Multichain Transparency Report**, expanding Dune-based on-chain monitoring.
+> **Update (v1.4):** Added **Multichain Ownership Transfer Proofs** + updated Safe Multisig governance structure, improving CEX due diligence alignment.
+
+---
+
+# 🔐 Smart Contract Ownership Transfers (Multi-Chain)
+
+All $IOB smart contracts across all networks have been migrated to secure **4-of-7 Safe Multisig Treasury wallets**, ensuring:
+
+- Institutional-grade security  
+- Decentralized governance  
+- CEX listing compatibility  
+- Full on-chain verification  
+- Elimination of single-party control  
+
+📄 **Full documentation (PDFs + transaction proofs):**  
+👉 https://github.com/iobeatss/treasury/tree/main/docs/ownership-transfers
+
+### **Contract Overview (All Networks)**
+
+| Chain | Contract | Multisig Owner | PDF |
+|-------|----------|----------------|------|
+| **Ethereum** | `0xc2aF8206...2De6A21d710` | `0xA2952C5F625e59E21012FB92A8D8269Fdb324554` | [PDF](./docs/ownership-transfers/IOB_Ethereum_Ownership_Transfer.pdf) |
+| **BNB Chain** | `0x0366bb76...a0A4D447` | `0xF460231ACC9C5Fe80CdCC074022c43a5AF59fF06` | [PDF](./docs/ownership-transfers/IOB_BNBChain_Ownership_Transfer.pdf) |
+| **Polygon** | `0xFd9D9dad...269C63b` | `0xDce35f5F9aB98c6dd671b15Fb23602f67E296c0B` | [PDF](./docs/ownership-transfers/IOB_Polygon_Ownership_Transfer.pdf) |
+| **Base** | `0x27df736a...20Da86` | `0xc5086e22eb99A90F345c0b6602b09b1032bb1aB6` | [PDF](./docs/ownership-transfers/IOB_Base_Ownership_Transfer.pdf) |
+| **Arbitrum** | `0x4B78FB95...20d38C` | Safe Multichain Treasury | [PDF](./docs/ownership-transfers/IOB_Arbitrum_Ownership_Transfer.pdf) |
+
+> These documents are now required by CEX listings, KYC due diligence, liquidity partners, and auditing firms.
 
 ---
 
@@ -47,64 +74,17 @@ It is designed for **investors, exchanges (CEX), and the community** to ensure *
 - **Sablier Test Report v1.0** → [`PDF`](./docs/IOB_Sablier_Test_Report_v1.0.pdf)  
 - **Payroll Infrastructure v1.0** → [`PDF`](./docs/IOB_Payroll_Infrastructure_v1.0.pdf)  
 - **IOB Academy Preview v1.0** → [`PDF`](./docs/IOB_Academy_Preview_v1.0.pdf)  
-- **DAO Governance Framework v1.0 (Premium Edition)** → [`PDF`](./docs/governance/IOB_DAO_Governance_Framework_v1.0_PremiumEdition.pdf)  
+- **DAO Governance Framework v1.0** → [`PDF`](./docs/governance/IOB_DAO_Governance_Framework_v1.0_PremiumEdition.pdf)  
 - **Changelog** → [`CHANGELOG.md`](./CHANGELOG.md)
 
 ---
 
-## 💰 Tokenomics & Investor Reports
+# 💰 Tokenomics & Investor Reports
 
 [![PDF Download](https://img.shields.io/badge/Download-Tokenomics_v1.02-orange?logo=adobeacrobatreader)](./docs/tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf)
 
-The **IO Beats Tokenomics v1.02 (Investor Edition)** provides a complete breakdown of  
-the $IOB allocation, vesting model, DAO treasury distribution, and multichain logic.
+The **IO Beats Tokenomics v1.02 (Investor Edition)** outlines full allocation, vesting, DAO treasury, multichain logic, LP creation, and ecosystem emissions.
 
-| Category | Allocation | Vesting / Lock | Notes |
-|-----------|-------------|----------------|-------|
-| **Presale** | 20% (10B IOB) | 10% TGE · 2M cliff · 18M vesting | Multi-chain fundraising |
-| **Community Reserve** | 25% (12.5B IOB) | DAO unlock max 5%/year | Growth, airdrops, quests |
-| **Staking Rewards** | 15% (7.5B IOB) | 48M vesting | Long-term holder rewards |
-| **Liquidity** | 15% (7.5B IOB) | LP lock 12–24M | Pools via Uniswap, Pancake, Aerodrome |
-| **Teams & Contributors** | 10% (5B IOB) | 6M cliff · 36M vesting | Core team & operations |
-| **Founders** | 5% (2.5B IOB) | 12M cliff · 48M vesting | Long-term commitment |
-| **Treasury / Partnerships** | 10% (5B IOB) | Lock 24M | Strategic funds & listings |
-
-> 🧩 Token supply and vesting schedules are synchronized across all EVM-compatible chains.  
-> 📄 **Full Report:** [`IOB_Tokenomics_v1.02_InvestorEdition.pdf`](./docs/tokenomics/IOB_Tokenomics_v1.02_InvestorEdition.pdf)  
-> **Audit:** [Cyberscope](https://www.cyberscope.io/audits/iob) · **Transparency Dashboard:** [Dune](https://dune.com/iobeats_dao)
+(… conserve le reste de ta section tokenomics comme dans la version originale …)
 
 ---
-
-### 🌐 Token Distribution (Multi-Chain Overview)
-
-Each network hosts **10 B $IOB tokens**, forming a total supply of **50 B IOB** distributed equally across all chains.
-
-| Blockchain | Allocation | Explorer | Status |
-|-------------|-------------|-----------|---------|
-| **Ethereum** | 10 B IOB | [Etherscan](https://etherscan.io/token/0xc2af820610e055264f928388b85cdede6a21d710) | ✅ Active |
-| **BNB Chain** | 10 B IOB | [BscScan](https://bscscan.com/token/0x0366bb765b8e7180f8e0f6c33b93fdcaa0a4d447) | ✅ Active |
-| **Base** | 10 B IOB | [BaseScan](https://basescan.org/token/0x27df736a873a5bc0ce056e52459d61ed1720da86) | ✅ Active |
-| **Polygon** | 10 B IOB | [PolygonScan](https://polygonscan.com/token/0xfd9d9dad90a925630ffbd7ee7b2b57581269c63b) | ✅ Active |
-| **Arbitrum** | 10 B IOB | [Arbiscan](https://arbiscan.io/token/0xc720d3a15e97347ec501fd3011613c5b9337134d) | ✅ Active |
-
-> 🪙 **Total Supply:** 50,000,000,000 IOB  
-> 🔗 **5 Chains:** Ethereum · BNB Chain · Base · Polygon · Arbitrum  
-> 🧠 **Audited by:** Cyberscope — Multichain transparency validated  
-
----
-
-### 📊 Token Allocation Chart
-
-```mermaid
-%%{init: {'theme': 'neutral'}}%%
-pie showData
-    title Token Allocation (Total Supply 50B IOB)
-    "Community Reserve (25%)" : 12.5
-    "Presale (20%)" : 10
-    "Staking Rewards (15%)" : 7.5
-    "Liquidity (15%)" : 7.5
-    "Team & Contributors (10%)" : 5
-    "Founders (5%)" : 2.5
-    "Treasury & Partnerships (10%)" : 5
-
-
