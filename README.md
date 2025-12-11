@@ -85,6 +85,5 @@ All $IOB smart contracts across all networks have been migrated to secure **4-of
 
 The **IO Beats Tokenomics v1.02 (Investor Edition)** outlines full allocation, vesting, DAO treasury, multichain logic, LP creation, and ecosystem emissions.
 
-(… conserve le reste de ta section tokenomics comme dans la version originale …)
 
 ---
