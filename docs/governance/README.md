@@ -25,6 +25,8 @@ Every proposal is published through **Snapshot** and executed via **Safe multisi
 | **DAO Legal Disclosure & Risk Statement** | v1.0 | Oct 2025 | [📄 PDF](./IOB_DAO_LegalDisclosure_v1.0_Premium.pdf) |
 | **DAO Governance Framework (Premium Edition)** | v1.0 | Oct 2025 | [📄 PDF](./IOB_DAO_Governance_Framework_v1.0_PremiumEdition.pdf) |
 | **Snapshot Governance Activation Report** | v1.0 | Oct 2025 | [📄 PDF](./DAO_Snapshot_Governance_Activation_IOB_Vote.pdf) |
+| **Snapshot Voting Guide** | v1.0 | Oct 2025 | [📄 PDF](./IOB_Governance_VotingGuide_v1.0.pdf) |
+| **Governance Roles & Permissions** | v1.0 | Oct 2025 | [📄 PDF](./IOB_Governance_Roles_Permissions_v1.0.pdf) |
 
 > 🧠 These documents define the DAO’s structure, membership, quorum rules, proposal cycles, security clauses, and legal posture.
 
